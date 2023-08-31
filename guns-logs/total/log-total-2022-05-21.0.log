@@ -1,0 +1,540 @@
+2022-05-21 07:44:23.610  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Starting StartApplication on SKY-20220414YKC with PID 52092 (D:\project\workspace\pw\pw\projects\target\classes started by Administrator in D:\project\workspace\pw\pw\projects)
+2022-05-21 07:44:23.620  INFO 52092 --- [restartedMain] com.projects.StartApplication            : The following profiles are active: dev
+2022-05-21 07:44:23.729  INFO 52092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-21 07:44:23.729  INFO 52092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-21 07:44:25.557  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$34b59b28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:25.641  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.437  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.441  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$cd975ab0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.446  INFO 52092 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2022-05-21 07:44:26.668  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.671  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.703  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.709  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.714  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.740  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.741  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2022-05-21 07:44:26.754  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2022-05-21 07:44:26.757  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.760  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.775  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$5c6c6beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.823  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.830  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.839  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.840  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:26.951  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3d0ab8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 07:44:27.948  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-21 07:44:27.979  INFO 52092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 07:44:27.979  INFO 52092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-05-21 07:44:27.989  INFO 52092 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\tools\jdk1.8\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\tools\oracle\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\tools\jdk1.8\jdk1.8.0_181\bin;D:\tools\Xshell 7\Xshell 7\;D:\tools\Xshell 7\Xftp_7.0\Xftp 7\;D:\tools\svn\TortoiseSVN\bin;D:\tools\cxf\apache-cxf-3.4.7\bin;D:\tools\ant\apache-ant-1.10.12\bin;D:\tools\nodejs\;D:\tools\git\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+2022-05-21 07:44:28.128  INFO 52092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 07:44:28.128  INFO 52092 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4398 ms
+2022-05-21 07:44:28.974  INFO 52092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-21 07:44:29.517  INFO 52092 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-21 07:44:31.849  WARN 52092 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-21 07:44:32.194  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/tools/Repositories/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2022-05-21 07:44:32.202  WARN 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2022-05-21 07:44:32.212  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-05-21 07:44:32.212  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-05-21 07:44:32.212  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2022-05-21 07:44:32.212  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2022-05-21 07:44:32.213  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2022-05-21 07:44:32.213  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2022-05-21 07:44:32.213  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2022-05-21 07:44:32.214  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2022-05-21 07:44:32.215  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\project\workspace\pw\pw\projects\transaction-logs
+2022-05-21 07:44:32.215  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2022-05-21 07:44:32.215  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2022-05-21 07:44:32.215  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2022-05-21 07:44:32.216  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2022-05-21 07:44:32.217  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2022-05-21 07:44:32.219  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2022-05-21 07:44:32.219  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 172.5.0.5.tm
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2022-05-21 07:44:32.220  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2022-05-21 07:44:32.223  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2022-05-21 07:44:32.943  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-05-21 07:44:32.974  INFO 52092 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-05-21 07:44:32.974  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2022-05-21 07:44:32.977  INFO 52092 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-05-21 07:44:32.979  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-05-21 07:44:32.980  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-05-21 07:44:32.981  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2022-05-21 07:44:32.981  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3b761d73
+2022-05-21 07:44:33.049  INFO 52092 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-05-21 07:44:33.465  INFO 52092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-21 07:44:33.531  INFO 52092 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-05-21 07:44:33.532  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-05-21 07:44:33.585  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-21 07:44:33.589  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Started StartApplication in 11.016 seconds (JVM running for 15.385)
+2022-05-21 07:44:33.596  INFO 52092 --- [restartedMain] com.projects.StartApplication            : StartApplication is success!
+2022-05-21 07:46:08.939  INFO 52092 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 07:46:08.940  INFO 52092 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-21 07:46:08.965  INFO 52092 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2022-05-21 07:46:08.987  INFO 52092 --- [http-nio-9090-exec-2] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-05-21 08:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 08:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 08:16:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 08:16:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 08:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 08:31:09.006  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  [1] sessions were stopped.
+2022-05-21 08:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 08:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 09:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 09:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 09:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 09:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 09:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 09:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 09:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 09:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 10:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 10:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 10:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 10:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 10:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 10:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 10:46:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 10:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  [1] sessions were stopped.
+2022-05-21 11:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 11:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 11:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 11:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 11:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 11:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 11:46:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 11:46:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 12:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 12:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 12:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 12:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 12:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 12:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 12:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 12:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 13:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 13:01:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 13:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 13:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 13:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 13:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 13:46:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 13:46:08.991  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 14:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 14:01:08.989  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 14:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 14:16:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 14:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 14:31:08.990  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 14:38:23.147  INFO 52092 --- [Thread-27] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-05-21 14:38:23.149  INFO 52092 --- [Thread-27] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-05-21 14:38:23.150  INFO 52092 --- [Thread-27] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-05-21 14:38:23.150  INFO 52092 --- [Thread-27] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-05-21 14:38:23.151  INFO 52092 --- [Thread-27] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-05-21 14:38:23.152  INFO 52092 --- [Thread-27] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-05-21 14:38:23.155  INFO 52092 --- [Thread-27] c.a.icatch.imp.TransactionServiceImp     : Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2022-05-21 14:38:23.174  INFO 52092 --- [Thread-27] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-05-21 14:38:23.175  INFO 52092 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-21 14:38:23.180  INFO 52092 --- [Thread-27] a.s.s.m.AbstractValidatingSessionManager : Disabled session validation scheduler.
+2022-05-21 14:38:23.181  INFO 52092 --- [Thread-27] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2022-05-21 14:38:24.363  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Starting StartApplication on SKY-20220414YKC with PID 52092 (D:\project\workspace\pw\pw\projects\target\classes started by Administrator in D:\project\workspace\pw\pw\projects)
+2022-05-21 14:38:24.364  INFO 52092 --- [restartedMain] com.projects.StartApplication            : The following profiles are active: dev
+2022-05-21 14:38:25.927  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$34b59b28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:25.947  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:25.951  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:25.958  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$cd975ab0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:25.963  INFO 52092 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2022-05-21 14:38:26.000  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.003  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.020  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.022  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.024  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.031  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.032  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache.1' does not yet exist.  Creating now.
+2022-05-21 14:38:26.055  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache.1]
+2022-05-21 14:38:26.058  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.062  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.068  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$5c6c6beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.106  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.110  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.113  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.114  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:26.154  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3d0ab8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 14:38:27.200  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-21 14:38:27.211  INFO 52092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 14:38:27.212  INFO 52092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-05-21 14:38:27.252  INFO 52092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 14:38:27.253  INFO 52092 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2883 ms
+2022-05-21 14:38:27.980  INFO 52092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-21 14:38:28.189  INFO 52092 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-05-21 14:38:30.334  WARN 52092 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-21 14:38:30.498  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/tools/Repositories/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2022-05-21 14:38:30.502  WARN 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2022-05-21 14:38:30.504  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\project\workspace\pw\pw\projects\transaction-logs
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2022-05-21 14:38:30.505  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 192.168.31.248.tm
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2022-05-21 14:38:30.506  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2022-05-21 14:38:30.507  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2022-05-21 14:38:30.507  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2022-05-21 14:38:30.930  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-05-21 14:38:30.931  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2022-05-21 14:38:30.932  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2067e51c
+2022-05-21 14:38:30.969  INFO 52092 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-05-21 14:38:31.477  INFO 52092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-21 14:38:31.559  INFO 52092 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-05-21 14:38:31.560  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-05-21 14:38:31.573  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-21 14:38:31.575  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Started StartApplication in 7.341 seconds (JVM running for 24853.37)
+2022-05-21 14:38:31.581  INFO 52092 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-21 14:38:31.581  INFO 52092 --- [restartedMain] com.projects.StartApplication            : StartApplication is success!
+2022-05-21 15:00:18.490  INFO 52092 --- [Thread-36] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-05-21 15:00:18.491  INFO 52092 --- [Thread-36] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-05-21 15:00:18.492  INFO 52092 --- [Thread-36] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-05-21 15:00:18.492  INFO 52092 --- [Thread-36] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-05-21 15:00:18.492  INFO 52092 --- [Thread-36] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-05-21 15:00:18.492  INFO 52092 --- [Thread-36] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-05-21 15:00:18.494  INFO 52092 --- [Thread-36] c.a.icatch.imp.TransactionServiceImp     : Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2022-05-21 15:00:18.499  INFO 52092 --- [Thread-36] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-05-21 15:00:18.500  INFO 52092 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-21 15:00:18.501  INFO 52092 --- [Thread-36] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2022-05-21 15:00:19.523  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Starting StartApplication on SKY-20220414YKC with PID 52092 (D:\project\workspace\pw\pw\projects\target\classes started by Administrator in D:\project\workspace\pw\pw\projects)
+2022-05-21 15:00:19.524  INFO 52092 --- [restartedMain] com.projects.StartApplication            : The following profiles are active: dev
+2022-05-21 15:00:20.244  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$34b59b28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.256  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.257  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.260  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$cd975ab0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.263  INFO 52092 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2022-05-21 15:00:20.280  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.281  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.290  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.291  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.293  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.296  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.297  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache.2' does not yet exist.  Creating now.
+2022-05-21 15:00:20.306  INFO 52092 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache.2]
+2022-05-21 15:00:20.307  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.308  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.312  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$5c6c6beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.329  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.330  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.331  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.332  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.356  INFO 52092 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3d0ab8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-21 15:00:20.688  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-21 15:00:20.690  INFO 52092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 15:00:20.691  INFO 52092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-05-21 15:00:20.727  INFO 52092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 15:00:20.727  INFO 52092 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1198 ms
+2022-05-21 15:00:21.251  INFO 52092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-21 15:00:21.424  INFO 52092 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-05-21 15:00:23.329  WARN 52092 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-21 15:00:23.464  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/tools/Repositories/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2022-05-21 15:00:23.465  WARN 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2022-05-21 15:00:23.467  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2022-05-21 15:00:23.468  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\project\workspace\pw\pw\projects\transaction-logs
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 192.168.31.248.tm
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2022-05-21 15:00:23.469  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2022-05-21 15:00:23.470  INFO 52092 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2022-05-21 15:00:23.779  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-05-21 15:00:23.780  INFO 52092 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2022-05-21 15:00:23.781  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5a57b367
+2022-05-21 15:00:23.818  INFO 52092 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-05-21 15:00:24.206  INFO 52092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-21 15:00:24.256  INFO 52092 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-05-21 15:00:24.256  INFO 52092 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-05-21 15:00:24.266  INFO 52092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-21 15:00:24.267  INFO 52092 --- [restartedMain] com.projects.StartApplication            : Started StartApplication in 4.814 seconds (JVM running for 26166.062)
+2022-05-21 15:00:24.272  INFO 52092 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-21 15:00:24.272  INFO 52092 --- [restartedMain] com.projects.StartApplication            : StartApplication is success!
+2022-05-21 15:09:47.663  INFO 52092 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 15:09:47.665  INFO 52092 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-21 15:09:47.686  INFO 52092 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2022-05-21 15:09:47.687  INFO 52092 --- [http-nio-9090-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-05-21 15:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 15:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 15:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 15:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 15:54:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 15:54:47.691  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  [1] sessions were stopped.
+2022-05-21 16:09:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 16:09:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 16:24:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 16:24:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 16:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 16:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 16:54:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 16:54:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 17:03:47.673 ERROR 52092 --- [http-nio-9090-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9090-exec-9] Exception processing template "/modular/classRoom/classRoom.html": Error resolving template [/modular/classRoom/classRoom.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/modular/classRoom/classRoom.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-05-21 17:03:47.682 ERROR 52092 --- [http-nio-9090-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/modular/classRoom/classRoom.html], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/modular/classRoom/classRoom.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-05-21 17:09:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 17:09:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 17:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 17:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 17:39:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 17:39:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  [1] sessions were stopped.
+2022-05-21 17:54:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 17:54:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 18:09:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 18:09:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 18:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 18:24:47.689  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 18:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 18:39:47.688  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.336  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.336  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.336  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.337  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.337  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.337  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.337  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.337  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:15:19.338  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:24:47.679  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:24:47.679  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-05-21 21:39:47.678  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-05-21 21:39:47.678  INFO 52092 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.

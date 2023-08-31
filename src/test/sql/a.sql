@@ -1,0 +1,413 @@
+-- MySQL dump 10.13  Distrib 5.7.10, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: java_student_attendance
+-- ------------------------------------------------------
+-- Server version	5.7.10-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `sys_menu`
+--
+
+DROP TABLE IF EXISTS `sys_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_menu` (
+  `menu_id` bigint(20) NOT NULL COMMENT '主键id',
+  `code` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '菜单编号',
+  `pcode` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '菜单父编号',
+  `pcodes` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '当前菜单的所有父菜单编号',
+  `name` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '菜单名称',
+  `icon` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '菜单图标',
+  `url` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT 'url地址',
+  `sort` int(65) DEFAULT NULL COMMENT '菜单排序号',
+  `levels` int(65) DEFAULT NULL COMMENT '菜单层级',
+  `menu_flag` varchar(32) COLLATE utf8_bin DEFAULT NULL COMMENT '是否是菜单(字典)',
+  `description` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '备注',
+  `status` varchar(32) COLLATE utf8_bin DEFAULT 'ENABLE' COMMENT '菜单状态(字典)',
+  `new_page_flag` varchar(32) COLLATE utf8_bin DEFAULT NULL COMMENT '是否打开新页面的标识(字典)',
+  `open_flag` varchar(32) COLLATE utf8_bin DEFAULT NULL COMMENT '是否打开(字典)',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '修改时间',
+  `create_user` bigint(20) DEFAULT NULL COMMENT '创建人',
+  `update_user` bigint(20) DEFAULT NULL COMMENT '修改人',
+  PRIMARY KEY (`menu_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC COMMENT='菜单表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_menu`
+--
+
+LOCK TABLES `sys_menu` WRITE;
+/*!40000 ALTER TABLE `sys_menu` DISABLE KEYS */;
+INSERT INTO `sys_menu` VALUES (105,'system','0','[0],','系统管理','layui-icon layui-icon-set-fill','#',1,1,'Y',NULL,'ENABLE',NULL,'1',NULL,'2023-03-27 23:15:31',NULL,1),(106,'mgr','0','[0],','教师管理','layui-icon layui-icon-group','/mgr',4,1,'Y',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(107,'mgr_add','mgr','[0],[mgr],','添加用户',NULL,'/mgr/add',1,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(108,'mgr_edit','mgr','[0],[mgr],','修改用户',NULL,'/mgr/edit',2,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(109,'mgr_delete','mgr','[0],[mgr],','删除用户',NULL,'/mgr/delete',3,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(110,'mgr_reset','mgr','[0],[mgr],','重置密码',NULL,'/mgr/reset',4,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(111,'mgr_freeze','mgr','[0],[mgr],','冻结用户',NULL,'/mgr/freeze',5,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(112,'mgr_unfreeze','mgr','[0],[mgr],','解除冻结用户',NULL,'/mgr/unfreeze',6,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(113,'mgr_setRole','mgr','[0],[mgr],','分配角色',NULL,'/mgr/setRole',7,2,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:19:31',NULL,1),(114,'role','system','[0],[system],','角色管理','layui-icon layui-icon-console','/role',1,2,'Y',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:15:42',NULL,1),(115,'role_add','role','[0],[system],[role],','添加角色',NULL,'/role/add',1,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:15:42',NULL,1),(116,'role_edit','role','[0],[system],[role],','修改角色',NULL,'/role/edit',2,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:15:42',NULL,1),(117,'role_remove','role','[0],[system],[role],','删除角色',NULL,'/role/remove',3,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:15:42',NULL,1),(118,'role_setAuthority','role','[0],[system],[role],','配置权限',NULL,'/role/setAuthority',4,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:15:42',NULL,1),(119,'menu','system','[0],[system],','菜单管理','layui-icon layui-icon-layouts','/menu',2,2,'Y',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:16:16',NULL,1),(120,'menu_add','menu','[0],[system],[menu],','添加菜单',NULL,'/menu/add',1,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:16:16',NULL,1),(121,'menu_edit','menu','[0],[system],[menu],','修改菜单',NULL,'/menu/edit',2,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:16:16',NULL,1),(122,'menu_remove','menu','[0],[system],[menu],','删除菜单',NULL,'/menu/remove',3,3,'N',NULL,'ENABLE',NULL,'0',NULL,'2023-03-27 23:16:16',NULL,1),(150,'to_menu_edit','menu','[0],[system],[menu],','菜单编辑跳转','','/menu/menu_edit',4,3,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:16:16',NULL,1),(151,'menu_list','menu','[0],[system],[menu],','菜单列表','','/menu/list',5,3,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:16:16',NULL,1),(162,'to_role_edit','role','[0],[system],[role],','修改角色跳转','','/role/role_edit',5,3,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:15:42',NULL,1),(163,'to_role_assign','role','[0],[system],[role],','角色分配跳转','','/role/role_assign',6,3,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:15:42',NULL,1),(164,'role_list','role','[0],[system],[role],','角色列表','','/role/list',7,3,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:15:42',NULL,1),(165,'to_assign_role','mgr','[0],[mgr],','分配角色跳转','','/mgr/role_assign',8,2,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:19:31',NULL,1),(166,'to_user_edit','mgr','[0],[mgr],','编辑用户跳转','','/mgr/user_edit',9,2,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:19:31',NULL,1),(167,'mgr_list','mgr','[0],[mgr],','用户列表','','/mgr/list',10,2,'N',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:19:31',NULL,1),(1369919363562328065,'ATTENDANCE','0','[0],','学生考勤','layui-icon layui-icon-date','/attendance',7,1,'Y','','ENABLE','','',NULL,'2023-03-27 23:24:29',1,1),(1369919363570716674,'ATTENDANCE_ADD','0','[0],','学生管理','layui-icon layui-icon-user','/mgr/student',5,1,'Y','','ENABLE','','',NULL,'2023-03-27 23:19:42',1,1),(1369919363570716675,'ATTENDANCE_EDIT','ATTENDANCE','[0],[ATTENDANCE],','学生考勤修改','fa-star','',999,2,'N','','ENABLE','','',NULL,'2023-03-27 23:24:29',1,1),(1369919363570716676,'ATTENDANCE_DELETE','ATTENDANCE','[0],[ATTENDANCE],','学生考勤删除','fa-star','',999,2,'N','','ENABLE','','',NULL,'2023-03-27 23:24:29',1,1),(1369919363671379970,'DEPT','0','[0],','班级管理','layui-icon layui-icon-flag','/dept',3,1,'Y','','ENABLE','','',NULL,'2023-03-27 23:19:03',1,1),(1369919363801403393,'LEAVE','0','[0],','请假审批','layui-icon layui-icon-form','/leave',10,1,'Y','','ENABLE','','',NULL,'2023-03-27 23:25:48',1,1),(1369919363801403394,'LEAVE_ADD','LEAVE','[0],[LEAVE],','请假管理添加','fa-star','',999,2,'N','','ENABLE','','',NULL,'2023-03-27 23:25:48',1,1),(1369919363801403395,'LEAVE_EDIT','LEAVE','[0],[LEAVE],','请假管理修改','fa-star','',999,2,'N','','ENABLE','','',NULL,'2023-03-27 23:25:48',1,1),(1369919363801403396,'LEAVE_DELETE','LEAVE','[0],[LEAVE],','请假管理删除','fa-star','/LEAVE_DELETE',999,2,'N','','ENABLE','','',NULL,'2023-03-27 23:25:48',1,1),(1379034565478170626,'878787811','0','[0],','学生请假','layui-icon layui-icon-release','/leave',9,1,'Y',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:25:24',1,1),(1379075036858531841,'tub121212','0','[0],','图表统计','layui-icon layui-icon-chart-screen','/attendance/statistics',8,1,'Y',NULL,'ENABLE',NULL,NULL,NULL,'2023-03-27 23:24:40',1,1),(1508998356323508226,'CLASS_ROOM','0','[0],','课堂管理','layui-icon layui-icon-read','/classRoom',6,1,'Y','','ENABLE','','','2022-03-30 10:43:38','2023-03-27 23:23:45',1,1),(1508998356323508227,'CLASS_ROOM_ADD','CLASS_ROOM','[0],[CLASS_ROOM],','课堂添加','fa-star','',999,2,'N','','ENABLE','','','2022-03-30 10:43:38','2023-03-27 23:23:45',1,1),(1508998356323508228,'CLASS_ROOM_EDIT','0','[0],','校园通知','layui-icon layui-icon-notice','/news',999,1,'Y','','ENABLE','','','2022-03-30 10:43:38','2023-03-27 22:55:45',1,1),(1508998356323508229,'CLASS_ROOM_DELETE','CLASS_ROOM','[0],[CLASS_ROOM],','课堂删除','fa-star','/CLASS_ROOM_DELETE',999,2,'N','','ENABLE','','','2022-03-30 10:43:38','2023-03-27 23:23:45',1,1),(1524416795288473602,'COLLEGE','0','[0],','学院管理','layui-icon layui-icon-home','/college',2,1,'Y','','ENABLE','','','2022-05-11 23:51:00','2023-03-27 23:17:48',1,1),(1524416795288473603,'COLLEGE_ADD','COLLEGE','[0],[COLLEGE],','学院添加','fa-star','',999,2,'N','','ENABLE','','','2022-05-11 23:51:00','2023-03-27 23:17:48',1,1),(1524416795288473604,'COLLEGE_EDIT','COLLEGE','[0],[COLLEGE],','学院修改','fa-star','',999,2,'N','','ENABLE','','','2022-05-11 23:51:00','2023-03-27 23:17:48',1,1),(1524416795288473605,'COLLEGE_DELETE','COLLEGE','[0],[COLLEGE],','学院删除','fa-star','',999,2,'N','','ENABLE','','','2022-05-11 23:51:00','2023-03-27 23:17:48',1,1),(1524578868387618818,'STUDENT','0','[0],','学生管理','fa-star','/student',999,1,'Y','','ENABLE','','','2022-05-12 10:35:02','2022-05-12 10:35:02',1,1),(1524578868387618819,'STUDENT_ADD','STUDENT','[0],[STUDENT],','学生管理添加','','',999,2,'N','','ENABLE','','','2022-05-12 10:35:02','2023-03-28 00:06:28',1,1),(1524578868387618820,'STUDENT_EDIT','STUDENT','[0],[STUDENT],','学生管理修改','fa-star','',999,2,'N','','ENABLE','','','2022-05-12 10:35:02','2022-05-12 10:35:02',1,1),(1524578868387618821,'STUDENT_DELETE','STUDENT','[0],[STUDENT],','学生管理删除','fa-star','',999,2,'N','','ENABLE','','','2022-05-12 10:35:02','2022-05-12 10:35:02',1,1),(1529119745431842818,'CLASS_ROOM_SHOW','CLASS_ROOM','[0],[CLASS_ROOM],','课堂考勤名单','','/CLASS_ROOM_SHOW',NULL,2,'N',NULL,'ENABLE',NULL,NULL,'2022-05-24 23:18:52','2023-03-27 23:23:45',1,1);
+/*!40000 ALTER TABLE `sys_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_relation`
+--
+
+DROP TABLE IF EXISTS `sys_relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_relation` (
+  `relation_id` bigint(20) NOT NULL COMMENT '主键',
+  `menu_id` bigint(20) DEFAULT NULL COMMENT '菜单id',
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色id',
+  PRIMARY KEY (`relation_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC COMMENT='角色和菜单关联表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_relation`
+--
+
+LOCK TABLES `sys_relation` WRITE;
+/*!40000 ALTER TABLE `sys_relation` DISABLE KEYS */;
+INSERT INTO `sys_relation` VALUES (1640317251308335106,1369919363801403393,1359012972354043905),(1640317251308335107,1369919363801403394,1359012972354043905),(1640317251308335108,1369919363801403395,1359012972354043905),(1640317251308335109,1369919363801403396,1359012972354043905),(1640317251308335110,1508998356323508226,1359012972354043905),(1640317251367055362,1508998356323508227,1359012972354043905),(1640317251367055363,1508998356323508229,1359012972354043905),(1640317251367055364,1508998356323508228,1359012972354043905),(1640334018172792833,105,1),(1640334018172792834,114,1),(1640334018239901697,115,1),(1640334018239901698,116,1),(1640334018239901699,117,1),(1640334018239901700,118,1),(1640334018239901701,162,1),(1640334018239901702,163,1),(1640334018239901703,164,1),(1640334018239901704,119,1),(1640334018239901705,120,1),(1640334018307010562,121,1),(1640334018307010563,122,1),(1640334018307010564,150,1),(1640334018307010565,151,1),(1640334018307010566,106,1),(1640334018307010567,107,1),(1640334018307010568,108,1),(1640334018307010569,109,1),(1640334018307010570,110,1),(1640334018307010571,111,1),(1640334018374119425,112,1),(1640334018374119426,113,1),(1640334018374119427,165,1),(1640334018374119428,166,1),(1640334018374119429,167,1),(1640334018374119430,1369919363562328065,1),(1640334018374119431,1369919363570716675,1),(1640334018374119432,1369919363570716676,1),(1640334018374119433,1369919363570716674,1),(1640334018374119434,1369919363671379970,1),(1640334018441228290,1369919363801403393,1),(1640334018441228291,1369919363801403394,1),(1640334018441228292,1369919363801403395,1),(1640334018441228293,1369919363801403396,1),(1640334018441228294,1379034565478170626,1),(1640334018441228295,1379075036858531841,1),(1640334018441228296,1508998356323508226,1),(1640334018441228297,1508998356323508227,1),(1640334018441228298,1508998356323508229,1),(1640334018441228299,1529119745431842818,1),(1640334018441228300,1508998356323508228,1),(1640334018508337153,1524416795288473602,1),(1640334018508337154,1524416795288473603,1),(1640334018508337155,1524416795288473604,1),(1640334018508337156,1524416795288473605,1),(1640334183159934978,1369919363562328065,1323546363237978113),(1640334183159934979,1369919363570716675,1323546363237978113),(1640334183159934980,1369919363570716676,1323546363237978113),(1640334183227043841,1379034565478170626,1323546363237978113),(1640334183227043842,1508998356323508226,1323546363237978113),(1640334183227043843,1508998356323508227,1323546363237978113),(1640334183227043844,1508998356323508228,1323546363237978113);
+/*!40000 ALTER TABLE `sys_relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role`
+--
+
+DROP TABLE IF EXISTS `sys_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_role` (
+  `role_id` bigint(20) NOT NULL COMMENT '主键id',
+  `pid` bigint(20) DEFAULT NULL COMMENT '父角色id',
+  `name` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '角色名称',
+  `description` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '提示',
+  `sort` int(11) DEFAULT NULL COMMENT '序号',
+  `version` int(11) DEFAULT NULL COMMENT '乐观锁',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '修改时间',
+  `create_user` bigint(20) DEFAULT NULL COMMENT '创建用户',
+  `update_user` bigint(20) DEFAULT NULL COMMENT '修改用户',
+  PRIMARY KEY (`role_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC COMMENT='角色表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role`
+--
+
+LOCK TABLES `sys_role` WRITE;
+/*!40000 ALTER TABLE `sys_role` DISABLE KEYS */;
+INSERT INTO `sys_role` VALUES (1,0,'超级管理员','administrator',1,1,NULL,NULL,NULL,NULL),(1323546363237978113,1,'学生','学生',NULL,NULL,NULL,'2023-04-12 21:39:50',1,1),(1359012972354043905,1,'老师','老师',NULL,NULL,NULL,'2022-03-30 14:03:49',1,1);
+/*!40000 ALTER TABLE `sys_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_user`
+--
+
+DROP TABLE IF EXISTS `sys_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_user` (
+  `user_id` bigint(20) NOT NULL COMMENT '主键id',
+  `avatar` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '头像',
+  `account` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT '账号',
+  `password` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT '密码',
+  `salt` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT 'md5密码盐',
+  `name` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT '名字',
+  `birthday` datetime DEFAULT NULL COMMENT '生日',
+  `sex` varchar(32) COLLATE utf8_bin DEFAULT NULL COMMENT '性别(字典)',
+  `email` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT '电子邮件',
+  `phone` varchar(45) COLLATE utf8_bin DEFAULT NULL COMMENT '电话',
+  `role_id` varchar(255) COLLATE utf8_bin DEFAULT NULL COMMENT '角色id(多个逗号隔开)',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门id(多个逗号隔开)',
+  `status` varchar(32) COLLATE utf8_bin DEFAULT NULL COMMENT '状态(字典)',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `create_user` bigint(20) DEFAULT NULL COMMENT '创建人',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_user` bigint(20) DEFAULT NULL COMMENT '更新人',
+  `version` int(11) DEFAULT NULL COMMENT '乐观锁',
+  PRIMARY KEY (`user_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC COMMENT='员工管理表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_user`
+--
+
+LOCK TABLES `sys_user` WRITE;
+/*!40000 ALTER TABLE `sys_user` DISABLE KEYS */;
+INSERT INTO `sys_user` VALUES (1,'http://127.0.0.1:9090/static/images/8b0c8ece-7a29-4de8-a257-290b3d589084.jpg','admin','764cc8a65019537b934b57a49cae4f06','mj038','小明','1991-11-16 00:00:00','M','2001216151','18856369999','1',1640377842488107009,'ENABLE','2023-03-24 08:49:53',NULL,'2023-04-01 15:13:18',24,25),(1358028318281003010,'http://127.0.0.1:9090/static/images/3d6b47d6-c57b-4979-8f4a-88e40e1fa7d0.jpg','1000001','98dc00bb8e7ed4ee855ecf497b4847a8','beihr','张三','2021-02-14 00:00:00','M','102222','18932297586','1323546363237978113',1369940894036209665,'DELETED','2022-04-24 20:22:37',1,'2023-03-27 19:11:25',1,NULL),(1370017415803305986,'http://192.168.3.2/images/1ba74465-ef93-4b98-80cd-2407fc3dfad7.jpg','user123','ff06ba6bc92748de327885aeb44b5521','6zt66','王五','2021-03-21 00:00:00','M','1000055','18955555555','1359012972354043905',1369940894036209665,'DELETED','2022-04-24 22:23:00',1,'2023-03-27 19:35:19',1,NULL),(1379039514287128578,'http://192.168.3.2/images/a810fa61-4f97-4ec5-80b5-963090613611.png','lisi','f7827c8880a941f3cabadd190cf43844','xk8pt','李四','2021-04-29 00:00:00','M','1000088','18999999999','1323546363237978113',1379039570901843969,'DELETED','2022-04-24 19:53:36',1,'2022-04-24 16:23:41',1,NULL),(1509081156712116225,NULL,'1000002','c07a2112ae2e10782c5d2fe89feb3332','vww70','曾辉',NULL,NULL,'ihao2021@163.com','18200000000','1323546363237978113',1369940894036209665,'DELETED','2022-04-24 16:12:39',1,NULL,NULL,NULL),(1524581263037394946,'http://192.168.3.2/images/c94958b0-ba8d-435c-a075-7b3d309b5118.jpg','8989','f0c101507bfe5c8e95445f01a986c95b','kspbd','张师傅1','2022-05-12 00:00:00','M','lvhaonihao2022@163.com','051-8888888','1323546363237978113',1369940894036209665,'DELETED','2022-05-12 10:44:33',1,'2022-05-21 09:59:17',1524581263037394946,NULL),(1524641166485581825,NULL,'sa','12a0efd785ef8e69f7c2e02eb9c94cb7','bqjhr','萨达sa',NULL,NULL,'3123','232','1323546363237978113',1,'DELETED','2022-05-12 14:42:34',1,NULL,NULL,NULL),(1524642088121004033,NULL,'5088899','6d8fa749c57c288520e4be9de1b23736','6zqfr','张老师',NULL,NULL,'4545@qq.com','1189787878','1359012972354043905',NULL,'DELETED','2022-05-12 14:46:14',1,NULL,NULL,NULL),(1524672687955226625,'http://192.168.3.2/images/db9a04c6-abdc-47aa-9dda-8790a30deac7.jpeg','78','3b6cd2033f949d74eed91671845014a6','jypw1','转角爱','2022-05-12 00:00:00',NULL,'123456@qq.com','18200000000','1323546363237978113',1369940894036209665,'DELETED','2022-05-12 16:47:50',1,'2022-05-12 17:00:57',1524672687955226625,NULL),(1528203009741598722,'http://127.0.0.1:9090/static/images/5b079d01-8e9d-470a-8978-1e8c0385956f.jpg','aaa','fa102c48fd927a54725ca60fd20a4087','mnptz','aaa','2022-05-22 00:00:00','M','aaa','','1323546363237978113',NULL,'DELETED','2022-05-22 10:36:05',1,NULL,NULL,NULL),(1528206039002173441,'http://127.0.0.1:9090/static/images/50980909-8797-47f1-9ecb-49999101093b.jpg','bbb','b6a1d33a924f0b8629b762110da6c37a','46q37','bbb','2022-05-22 00:00:00','M','bbb','','1323546363237978113',NULL,'DELETED','2022-05-22 10:48:07',1,NULL,NULL,NULL),(1528207308873846785,'http://127.0.0.1:9090/static/images/18d59e89-ea5f-44b9-b178-938aafe183cc.jpg','ccc','181d30aa05147a53668841bf0d22800d','hhcp5','ccc','2022-05-22 00:00:00','M','ccc','','1323546363237978113',NULL,'DELETED','2022-05-22 10:53:10',1,NULL,NULL,NULL),(1528600858490560513,'http://127.0.0.1:9090/static/images/444b5ee6-b330-4763-8dce-612517864c9d.jpg','qqq','671efe739eb26b82223dfad892eb1441','w1may','qqq','2022-05-23 00:00:00','M','123','051-8888888','1323546363237978113',1379039599561523201,'DELETED','2022-05-23 12:56:59',1,'2022-05-23 12:59:00',1,NULL),(1528614881525227522,'http://127.0.0.1:9090/static/images/964c5e8d-61fa-4cbd-ae2d-61be1207a62d.jpg','www','6d8fa749c57c288520e4be9de1b23736','6zqfr','www','2022-05-23 00:00:00','M','1234','','1323546363237978113',1379039570901843969,'DELETED','2022-05-23 13:52:43',1,NULL,NULL,NULL),(1529124504775811073,'http://127.0.0.1:9090/static/images/29da0cc7-12bb-4355-b18e-571d6332cc89.jpg','hhh','7c5f261fd184df1976231c308d8acf96','7vctm','hhh','2022-05-12 00:00:00',NULL,'lvhaonihao2021@163.com','051-8888888','1323546363237978113',1527474199961051138,'DELETED','2022-05-24 23:37:46',1,'2022-12-15 15:50:06',1529124504775811073,NULL),(1529124638758658050,NULL,'ggg','a4b6da3d724f8d448a82b041656d4896','6hpan','ggg',NULL,NULL,'lvhaonihao2021@163.com','051-8888888','1359012972354043905',NULL,'DELETED','2022-05-24 23:38:18',1,NULL,NULL,NULL),(1529289670670688258,NULL,'111','d4bbe50ebe433fdf755f585e340c28f0','pp0k9','111',NULL,'M','111','111','1323546363237978113',1379039599561523201,'DELETED','2022-05-25 10:34:04',1,NULL,NULL,NULL),(1640347658259025921,'http://127.0.0.1:9090/static/images/27d18594-edbc-4151-93de-5d0b22d29eaf.png','zhukailong','46b81bbdcb8683d8de7215008f352029','2l7c5','小七','2003-03-27 00:00:00','M','2020216151','18856369979','1323546363237978113',1640377842488107009,'ENABLE','2023-03-27 21:38:53',1,'2023-03-28 09:17:54',1,NULL),(1640381552668762113,'http://127.0.0.1:9090/static/images/8783560f-a36c-4d19-a815-1278becd25ea.png','teacher','86b9d2e699ce65d07bb87db983f0c5ac','k7oht','小红','1996-03-27 00:00:00','F','2000215151','18856368876','1323546363237978113',1640377842488107009,'DELETED','2023-03-27 23:53:34',1,NULL,NULL,NULL),(1640382062821957634,'http://127.0.0.1:9090/static/images/c247c488-98bb-49b9-b67f-ab30cf48ee4d.png','teacher','5b483413b2cdfa3c59dfa08e4de9af4d','lp7ww','小红','1991-03-27 00:00:00','F','2000215151','18856369976','1323546363237978113',1640377988630241281,'DELETED','2023-03-27 23:55:35',1,NULL,NULL,NULL),(1640383988401758210,'http://127.0.0.1:9090/static/images/5f9bc69e-8ff4-44c2-8b56-ad1d6dfc95c0.png','1','62140a35e61a20ef012f5f603ff979a3','jj0fv','1','2023-03-28 00:00:00','M','1','','1323546363237978113',NULL,'DELETED','2023-03-28 00:03:14',1,NULL,NULL,NULL),(1640384212088184833,'http://127.0.0.1:9090/static/images/436bf66f-76b5-422a-9921-2ad74be60351.png','1','3c4108ebfddb0dbc355a051a228265c2','1xbct','1','2023-03-28 00:00:00','M','1','','1323546363237978113',NULL,'DELETED','2023-03-28 00:04:08',1,NULL,NULL,NULL),(1640386817279451137,NULL,'2020216151','f7629030d125a8487a25eee5ac2897ee','kmhyr','小红',NULL,NULL,'1789651088@qq.com','18856369999','1359012972354043905',NULL,'DELETED','2023-03-28 00:14:29',1,NULL,NULL,NULL),(1640387443824582658,NULL,'111111','b7bbaea8f9fa6e18b753f307e1a2495b','vyr68','小红',NULL,NULL,'1789651088@qq.com','18856369999','1359012972354043905',NULL,'DELETED','2023-03-28 00:16:58',1,NULL,NULL,NULL),(1640388664119582722,NULL,'111','41b42be22b9660036a9ae7dcdac6e183','uvwe4','111',NULL,'M','111111','18856369999','1323546363237978113',1640377842488107009,'DELETED','2023-03-28 00:21:49',1,NULL,NULL,NULL),(1640392896323350529,NULL,'teacher','7d3e264746f3e184dd55523f0c68b48c','otqpv','小红',NULL,NULL,'2000215151','18856369999','1359012972354043905',NULL,'ENABLE','2023-03-28 00:38:38',1,'2023-03-28 00:38:52',1,NULL),(1640507299022602241,'http://127.0.0.1:9090/static/images/629998b2-58f9-42ce-aac6-deb0bae45796.jpg','111','2064e42aaf9dfcf1fc94da2799cd71dd','5elql','111','2023-03-14 00:00:00','M','111','18856369979','1323546363237978113',1640378147766329346,'DELETED','2023-03-28 08:13:14',1,NULL,NULL,NULL),(1640507466874454018,'http://127.0.0.1:9090/static/images/02166564-7b45-4df5-84b2-e3eeed43e10d.jpg','1111','95c250e10710d3e9fd2e5f14bd420af9','kd3yw','1111','2023-03-07 00:00:00','M','1','18856369979','1323546363237978113',1640378147766329346,'DELETED','2023-03-28 08:13:54',1,'2023-03-28 09:17:51',1,NULL),(1640530699027869698,'http://127.0.0.1:9090/static/images/290e370f-b623-4783-8e8d-acd8f2166839.jpg','11','b21742f818e4c578946bb950bdd715be','54vhu','11','2023-03-28 00:00:00','M','111','','1359012972354043905',NULL,'DELETED','2023-03-28 09:46:13',1,NULL,NULL,NULL),(1640538084706467842,'http://127.0.0.1:9090/static/images/9dea41a8-9a35-4b9b-824e-d5f7d052cba8.jpg','xiaolan','bde0bf54920d37e3f11edf4b492c9ff3','gl04j','小蓝','2020-03-03 00:00:00','M','2000162356','18856369999','1323546363237978113',1369940894036209665,'ENABLE','2023-03-28 10:15:34',1,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `sys_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_attendance`
+--
+
+DROP TABLE IF EXISTS `t_attendance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_attendance` (
+  `attend_id` bigint(20) NOT NULL COMMENT '主键',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '学生',
+  `time` datetime DEFAULT NULL COMMENT '考勤时间',
+  `type` varchar(255) DEFAULT NULL COMMENT '考勤类型',
+  `pic` varchar(1255) DEFAULT NULL COMMENT '打卡照片',
+  `class_id` bigint(20) DEFAULT NULL COMMENT '班级',
+  `room_id` bigint(20) DEFAULT NULL COMMENT '课堂',
+  `lat` varchar(255) DEFAULT NULL COMMENT '经度',
+  `lng` varchar(255) DEFAULT NULL COMMENT '维度',
+  PRIMARY KEY (`attend_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='学生考勤';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_attendance`
+--
+
+LOCK TABLES `t_attendance` WRITE;
+/*!40000 ALTER TABLE `t_attendance` DISABLE KEYS */;
+INSERT INTO `t_attendance` VALUES (1640382975506702338,1640347658259025921,'2023-03-27 23:59:13','正常签到','http://127.0.0.1:9090/static/images/6fd287c7-7165-4c24-abcf-ded290d478cd.jpeg',1640377842488107009,1640382629552119810,'31.847763760241','117.30602807662'),(1640386239874785282,1640347658259025921,'2023-03-28 00:12:11','正常签到','http://127.0.0.1:9090/static/images/8a5c318f-2940-4c73-8a8b-2bd1520d9f56.jpeg',1640377842488107009,1640385846633619458,'30.911601','118.717558'),(1640523820255965186,1,'2023-03-28 09:18:28','事假',NULL,1640377842488107009,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `t_attendance` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_class_room`
+--
+
+DROP TABLE IF EXISTS `t_class_room`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_class_room` (
+  `room_id` bigint(20) NOT NULL,
+  `name` varchar(255) DEFAULT NULL COMMENT '课堂名称',
+  `start_time` datetime DEFAULT NULL COMMENT '开始时间',
+  `end_time` datetime DEFAULT NULL COMMENT '结束时间',
+  `user_id` varchar(20) DEFAULT NULL COMMENT '老师',
+  `classes_id` bigint(20) DEFAULT NULL COMMENT '班级',
+  `demand` varchar(255) DEFAULT NULL COMMENT '签到要求',
+  PRIMARY KEY (`room_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='课堂';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_class_room`
+--
+
+LOCK TABLES `t_class_room` WRITE;
+/*!40000 ALTER TABLE `t_class_room` DISABLE KEYS */;
+INSERT INTO `t_class_room` VALUES (1640382629552119810,'信息传输原理','2023-03-27 23:56:47','2023-03-28 01:00:00','1',1640377842488107009,'位置打卡'),(1640385846633619458,'计算机网络','2023-03-28 00:10:11','2023-03-28 03:00:00','1',1640377842488107009,'位置打卡');
+/*!40000 ALTER TABLE `t_class_room` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_classes`
+--
+
+DROP TABLE IF EXISTS `t_classes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_classes` (
+  `class_id` bigint(20) NOT NULL COMMENT '班级id',
+  `name` varchar(255) DEFAULT NULL COMMENT '班级名称',
+  `mark` varchar(255) DEFAULT NULL COMMENT '备注',
+  `major_id` bigint(20) DEFAULT NULL COMMENT '专业',
+  PRIMARY KEY (`class_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='班级';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_classes`
+--
+
+LOCK TABLES `t_classes` WRITE;
+/*!40000 ALTER TABLE `t_classes` DISABLE KEYS */;
+INSERT INTO `t_classes` VALUES (1369940894036209665,'计算机20-1班','计算机20-1班',1524567485109452802),(1379039570901843969,'计算机20-2班','计算机20-2班',1524567485109452802),(1379039599561523201,'计算机20-3班','计算机20-3班',1524567485109452802),(1640377842488107009,'电信科20-1班','电信科20-1班',1524420772604387330),(1640377988630241281,'电信科20-2班','电信科20-2班',1524420772604387330),(1640378147766329346,'电信科20-3班','电信科20-3班',1524420772604387330);
+/*!40000 ALTER TABLE `t_classes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_college`
+--
+
+DROP TABLE IF EXISTS `t_college`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_college` (
+  `college_id` bigint(20) NOT NULL,
+  `name` varchar(255) DEFAULT NULL COMMENT '学院',
+  PRIMARY KEY (`college_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='学院';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_college`
+--
+
+LOCK TABLES `t_college` WRITE;
+/*!40000 ALTER TABLE `t_college` DISABLE KEYS */;
+INSERT INTO `t_college` VALUES (1524418755907526657,'计算机与信息学院'),(1640376260878983169,'化学与化工学院'),(1640376565716803586,'管理学院'),(1640376717915512834,'经济学院'),(1640376990750793730,'土木与水利工程学院'),(1640377203171319810,'电气与自动化工程学院');
+/*!40000 ALTER TABLE `t_college` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_leave`
+--
+
+DROP TABLE IF EXISTS `t_leave`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_leave` (
+  `leave_id` bigint(20) NOT NULL COMMENT '主键',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '学生',
+  `start_time` datetime DEFAULT NULL COMMENT '开始时间',
+  `end_time` datetime DEFAULT NULL COMMENT '结束时间',
+  `mark` varchar(5000) DEFAULT NULL COMMENT '审批回复',
+  `status` int(11) DEFAULT NULL COMMENT '审批状态',
+  `reason` varchar(5000) DEFAULT NULL COMMENT '事由',
+  `type` varchar(255) DEFAULT NULL COMMENT '类型',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '所属班级',
+  PRIMARY KEY (`leave_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='请假管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_leave`
+--
+
+LOCK TABLES `t_leave` WRITE;
+/*!40000 ALTER TABLE `t_leave` DISABLE KEYS */;
+INSERT INTO `t_leave` VALUES (1640523767411929090,1,'2023-03-28 09:18:28',NULL,'',1,'吃饭','事假',1640377842488107009);
+/*!40000 ALTER TABLE `t_leave` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_major`
+--
+
+DROP TABLE IF EXISTS `t_major`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_major` (
+  `major_id` bigint(20) NOT NULL,
+  `name` varchar(255) DEFAULT NULL COMMENT '专业名称',
+  `college_id` bigint(20) DEFAULT NULL COMMENT '学院',
+  PRIMARY KEY (`major_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='专业';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_major`
+--
+
+LOCK TABLES `t_major` WRITE;
+/*!40000 ALTER TABLE `t_major` DISABLE KEYS */;
+INSERT INTO `t_major` VALUES (1524420772604387330,'电子信息科学与技术',1524418755907526657),(1524420791478755329,'物联网工程',1524418755907526657),(1524567485109452802,'计算机科学与技术',1524418755907526657),(1529113070834577410,'11',1527476459755577346),(1529113093831946242,'22',1527476459755577346),(1640376321595727874,'能源化学工程',1640376260878983169),(1640376397453910018,'精细化工',1640376260878983169),(1640376447852666882,'应用化学',1640376260878983169),(1640376612927889409,'物流管理',1640376565716803586),(1640376777118113794,'经济学',1640376717915512834),(1640376825293889537,'国际经济与贸易',1640376717915512834),(1640377099320352770,'城市地下空间工程',1640376990750793730),(1640377318414016513,'电子工程与智能控制',1640377203171319810),(1640377346595545090,'自动化',1640377203171319810);
+/*!40000 ALTER TABLE `t_major` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_news`
+--
+
+DROP TABLE IF EXISTS `t_news`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_news` (
+  `news_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '主键',
+  `title` varchar(255) NOT NULL COMMENT '标题',
+  `content` text NOT NULL COMMENT '内容',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '发布时间',
+  `author` varchar(255) DEFAULT NULL COMMENT '发布人',
+  `pic` varchar(255) DEFAULT NULL,
+  `des` varchar(255) DEFAULT NULL COMMENT '介绍',
+  PRIMARY KEY (`news_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='通知';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_news`
+--
+
+LOCK TABLES `t_news` WRITE;
+/*!40000 ALTER TABLE `t_news` DISABLE KEYS */;
+/*!40000 ALTER TABLE `t_news` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_student`
+--
+
+DROP TABLE IF EXISTS `t_student`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_student` (
+  `student_id` bigint(20) NOT NULL,
+  `name` varchar(255) NOT NULL COMMENT '姓名',
+  `user_name` varchar(255) NOT NULL COMMENT '学号',
+  `password` varchar(255) NOT NULL COMMENT '密码',
+  `tel` varchar(255) NOT NULL COMMENT '联系电话',
+  `college` varchar(255) NOT NULL COMMENT '学院',
+  `major` varchar(255) DEFAULT NULL COMMENT '专业',
+  `classes_id` bigint(20) DEFAULT NULL COMMENT '班级',
+  PRIMARY KEY (`student_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='学生管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_student`
+--
+
+LOCK TABLES `t_student` WRITE;
+/*!40000 ALTER TABLE `t_student` DISABLE KEYS */;
+INSERT INTO `t_student` VALUES (1524581263037394946,'张师傅','8989','123456','051-8888888','1524418755907526657','1524420791478755329',1379039570901843969),(1524672687955226625,'转角爱','78','123456','18200000000','1524418755907526657','1524567485109452802',1369940894036209665),(1529124504775811073,'hhh','hhh','123123','051-8888888','1524418755907526657','1524420772604387330',1527474199961051138);
+/*!40000 ALTER TABLE `t_student` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `t_teacher_class`
+--
+
+DROP TABLE IF EXISTS `t_teacher_class`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `t_teacher_class` (
+  `teacher_class_id` bigint(20) NOT NULL,
+  `teacher_id` bigint(20) DEFAULT NULL COMMENT '教师',
+  `class_id` bigint(20) DEFAULT NULL COMMENT '班级',
+  PRIMARY KEY (`teacher_class_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='教师管理班级';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_teacher_class`
+--
+
+LOCK TABLES `t_teacher_class` WRITE;
+/*!40000 ALTER TABLE `t_teacher_class` DISABLE KEYS */;
+INSERT INTO `t_teacher_class` VALUES (1524646143484489730,1524642088121004033,1379039570901843969),(1524648644971556865,1370017415803305986,1379039570901843969),(1524648679071248386,1370017415803305986,1379039599561523201),(1524673336033914881,1524642088121004033,1369940894036209665),(1640522712192180226,1640392896323350529,1640377842488107009);
+/*!40000 ALTER TABLE `t_teacher_class` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-05-28 14:21:17

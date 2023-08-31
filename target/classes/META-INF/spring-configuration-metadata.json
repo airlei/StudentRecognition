@@ -1,0 +1,459 @@
+{
+  "groups": [
+    {
+      "name": "beetl",
+      "type": "com.projects.config.properties.BeetlProperties",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "guns",
+      "type": "com.projects.config.properties.GunsProperties",
+      "sourceType": "com.projects.config.properties.GunsProperties"
+    },
+    {
+      "name": "guns.muti-datasource",
+      "type": "cn.stylefeng.roses.core.config.properties.DruidProperties",
+      "sourceType": "com.projects.config.datasource.multi.MultiDataSourceConfig",
+      "sourceMethod": "mutiDataSourceProperties()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "cn.stylefeng.roses.core.config.properties.DruidProperties",
+      "sourceType": "com.projects.config.datasource.multi.MultiDataSourceConfig",
+      "sourceMethod": "druidProperties()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "beetl.delimiter-statement-end",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.delimiter-statement-start",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-auto-check",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-tagroot",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-tagsuffix",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.BeetlProperties"
+    },
+    {
+      "name": "guns.file-upload-path",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.GunsProperties"
+    },
+    {
+      "name": "guns.kaptcha-open",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.projects.config.properties.GunsProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "guns.muti-datasource.data-source-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.data-source-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.filters",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.filters",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "guns.server-upload-path",
+      "type": "java.lang.String",
+      "sourceType": "com.projects.config.properties.GunsProperties"
+    },
+    {
+      "name": "guns.session-invalidate-time",
+      "type": "java.lang.Integer",
+      "description": "session 失效时间（默认为30分钟 单位：秒）",
+      "sourceType": "com.projects.config.properties.GunsProperties"
+    },
+    {
+      "name": "guns.session-validation-interval",
+      "type": "java.lang.Integer",
+      "description": "session 验证失效时间（默认为15分钟 单位：秒）",
+      "sourceType": "com.projects.config.properties.GunsProperties"
+    },
+    {
+      "name": "guns.spring-session-open",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.projects.config.properties.GunsProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "guns.swagger-open",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.projects.config.properties.GunsProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.data-source-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.data-source-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.filters",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.filters",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    },
+    {
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "cn.stylefeng.roses.core.config.properties.DruidProperties"
+    }
+  ],
+  "hints": []
+}

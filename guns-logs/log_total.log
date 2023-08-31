@@ -1,0 +1,165 @@
+2023-05-28 14:22:52.348  INFO 13120 --- [restartedMain] com.projects.StartApplication            : Starting StartApplication on lei with PID 13120 (C:\Users\23168\Desktop\projects\target\classes started by 23168 in C:\Users\23168\Desktop\projects)
+2023-05-28 14:22:52.353  INFO 13120 --- [restartedMain] com.projects.StartApplication            : The following profiles are active: dev
+2023-05-28 14:22:52.391  INFO 13120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-28 14:22:52.391  INFO 13120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-28 14:22:53.558  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$316cacbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.595  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.634  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.636  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$ca4e6c47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.638  INFO 13120 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2023-05-28 14:22:53.757  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.760  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.774  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.777  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.779  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.791  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.791  INFO 13120 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2023-05-28 14:22:53.798  INFO 13120 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2023-05-28 14:22:53.799  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.801  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.811  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$59237d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.835  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.838  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.844  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.844  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:53.883  INFO 13120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a087bd26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-28 14:22:54.431  INFO 13120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-28 14:22:54.449  INFO 13120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-28 14:22:54.449  INFO 13120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2023-05-28 14:22:54.455  INFO 13120 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\23168\.jdks\corretto-1.8.0_342\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Common Files\Oracle\Java\javapath;D:\Study\jdk\javajdk\\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Study\Vs Code\mingw64\bin;"D:\Study\jdk\javajdk\\bin;D:\Study\jdk\javajdk\\jre\bin;";";D:\Study\Tomcat 9\bin";D:\Study\MySQL\bin;D:\Study\Git\Git\cmd;D:\Study\maven\apache-maven-3.8.3\bin;D:\Study\wechat\微信web开发者工具\dll;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;D:\Study\mysql\bin;D:\Study\Android\SDK\platform-tools;D:\Study\Python;D:\Study\Python\Scripts;D:\Study\Xshell\;D:\Study\Hadoop\hadoop-3.2.0\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Study\Notepad++;D:\Study\MongoDB\bin;D:\Study\node.js\node_global;D:\Study\Python\Anaconda;D:\Study\Python\Anaconda\Library\bin;D:\Study\Python\Anaconda\python;D:\Study\Python\Anaconda\Scripts;D:\Study\Python\Anaconda\Library\mingw-w64\bin;D:\Study\Python\Anaconda\Library\user\bin;D:\Study\Redis\;D:\Study\node.js\;D:\Study\Scala\scala-2.12.11\bin;D:\Study\Python\Anaconda\condabin;D:\Study\driver;C:\strawberry\c\bin;C:\strawberry\perl\bin;D:\Study\UFT\UFT\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib;C:\Users\23168\AppData\Local\Microsoft\WindowsApps;D:\Study\IDEA_EE\IntelliJ IDEA 2021.2.3\bin;;D:\IDEA\IntelliJ IDEA Community Edition 2021.2.1\bin;;C:\Users\23168\.dotnet\tools;D:\LLVm\bin;D:\Study\jdk\javajdk\\jre\bin;D:\Study\jdk\javajdk\\bin;D:\Study\maven\apache-maven-3.8.3\bin;D:\Study\maven\apache-maven-3.8.3\bin;C:\Users\23168\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\23168\AppData\Local\Android\Sdk\tools;C:\Users\23168\AppData\Local\GitHubDesktop\bin;D:\Study\VsCode\Microsoft VS Code\bin;D:\Study\Python\PyCharm\PyCharm Community Edition 2022.1.1\bin;;D:\Study\Python\PyCharm_professional\PyCharm 2021.3.3\bin;;C:\ProgramData\23168\GitHubDesktop\bin;D:\Study\node.js;D:\Study\Python\Scripts;C:\Users\23168\AppData\Roaming\npm;D:\QQGameTempest\Hall.57915\;D:\Download\BandZip\;.]
+2023-05-28 14:22:54.613  INFO 13120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-28 14:22:54.613  INFO 13120 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2222 ms
+2023-05-28 14:22:54.979  INFO 13120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-28 14:22:55.289  INFO 13120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-05-28 14:22:56.359  WARN 13120 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-28 14:22:56.606  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/AppDate/apache-maven-3.9.1/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2023-05-28 14:22:56.609  WARN 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = C:\Users\23168\Desktop\projects\transaction-logs
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2023-05-28 14:22:56.613  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 192.168.10.1.tm
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2023-05-28 14:22:56.614  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2023-05-28 14:22:56.615  INFO 13120 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2023-05-28 14:22:56.853  INFO 13120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-05-28 14:22:56.864  INFO 13120 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-28 14:22:56.864  INFO 13120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2023-05-28 14:22:56.864  INFO 13120 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-05-28 14:22:56.865  INFO 13120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-28 14:22:56.865  INFO 13120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-28 14:22:56.865  INFO 13120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2023-05-28 14:22:56.865  INFO 13120 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4075fadb
+2023-05-28 14:22:56.881  INFO 13120 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-05-28 14:22:57.897  INFO 13120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-28 14:22:57.924  INFO 13120 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-05-28 14:22:57.924  INFO 13120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-05-28 14:22:57.954  INFO 13120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-28 14:22:57.956  INFO 13120 --- [restartedMain] com.projects.StartApplication            : Started StartApplication in 6.077 seconds (JVM running for 7.723)
+2023-05-28 14:22:57.959  INFO 13120 --- [restartedMain] com.projects.StartApplication            : StartApplication is success!
+2023-05-28 14:23:27.793  INFO 13120 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-28 14:23:27.793  INFO 13120 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-28 14:23:27.805  INFO 13120 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2023-05-28 14:23:27.815  INFO 13120 --- [http-nio-9090-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2023-05-28 14:23:27.821  WARN 13120 --- [http-nio-9090-exec-1] o.a.shiro.mgt.AbstractRememberMeManager  : There was a failure while trying to retrieve remembered principals.  This could be due to a configuration problem or corrupted principals.  This could also be due to a recently changed encryption key, if you are using a shiro.ini file, this property would be 'securityManager.rememberMeManager.cipherKey' see: http://shiro.apache.org/web.html#Web-RememberMeServices. The remembered identity will be forgotten and not used for this request.
+2023-05-28 14:23:27.823  WARN 13120 --- [http-nio-9090-exec-1] o.a.shiro.mgt.DefaultSecurityManager     : Delegate RememberMeManager instance of type [org.apache.shiro.web.mgt.CookieRememberMeManager] threw an exception during getRememberedPrincipals().
+
+org.apache.shiro.crypto.CryptoException: Unable to execute 'doFinal' with cipher instance [javax.crypto.Cipher@480816fc].
+	at org.apache.shiro.crypto.JcaCipherService.crypt(JcaCipherService.java:462)
+	at org.apache.shiro.crypto.JcaCipherService.crypt(JcaCipherService.java:445)
+	at org.apache.shiro.crypto.JcaCipherService.decrypt(JcaCipherService.java:390)
+	at org.apache.shiro.crypto.JcaCipherService.decrypt(JcaCipherService.java:382)
+	at org.apache.shiro.mgt.AbstractRememberMeManager.decrypt(AbstractRememberMeManager.java:482)
+	at org.apache.shiro.mgt.AbstractRememberMeManager.convertBytesToPrincipals(AbstractRememberMeManager.java:419)
+	at org.apache.shiro.mgt.AbstractRememberMeManager.getRememberedPrincipals(AbstractRememberMeManager.java:386)
+	at org.apache.shiro.mgt.DefaultSecurityManager.getRememberedIdentity(DefaultSecurityManager.java:612)
+	at org.apache.shiro.mgt.DefaultSecurityManager.resolvePrincipals(DefaultSecurityManager.java:500)
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:346)
+	at org.apache.shiro.subject.Subject$Builder.buildSubject(Subject.java:845)
+	at org.apache.shiro.web.subject.WebSubject$Builder.buildWebSubject(WebSubject.java:148)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.createSubject(AbstractShiroFilter.java:292)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:359)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 16 when decrypting with padded cipher
+	at com.sun.crypto.provider.CipherCore.prepareInputBuffer(CipherCore.java:1005)
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:848)
+	at com.sun.crypto.provider.AESCipher.engineDoFinal(AESCipher.java:446)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2168)
+	at org.apache.shiro.crypto.JcaCipherService.crypt(JcaCipherService.java:459)
+	... 54 common frames omitted
+
+2023-05-28 14:28:55.866  INFO 13120 --- [Thread-23] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-28 14:28:55.867  INFO 13120 --- [Thread-23] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-05-28 14:28:55.867  INFO 13120 --- [Thread-23] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-05-28 14:28:55.867  INFO 13120 --- [Thread-23] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-28 14:28:55.867  INFO 13120 --- [Thread-23] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-28 14:28:55.868  INFO 13120 --- [Thread-23] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-28 14:28:55.868  INFO 13120 --- [Thread-23] c.a.icatch.imp.TransactionServiceImp     : Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2023-05-28 14:28:55.873  INFO 13120 --- [Thread-23] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-05-28 14:28:55.873  INFO 13120 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-28 14:28:55.874  INFO 13120 --- [Thread-23] a.s.s.m.AbstractValidatingSessionManager : Disabled session validation scheduler.
+2023-05-28 14:28:55.874  INFO 13120 --- [Thread-23] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager

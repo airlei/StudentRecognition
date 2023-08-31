@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册 - 学生考勤人脸识别管理系统</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="${ctxPath}/assets/common/layui/css/layui.css"/>
+    <link rel="stylesheet" href="${ctxPath}/assets/common/css/login.css" media="all">
+    <style>
+        body {
+            background-image: url("${ctxPath}/assets/common/images/bg_login2.svg");
+            background-position: center 110px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: #f0f2f5;
+        }
+
+        .login-header {
+            color: rgba(0, 0, 0, .85) !important;
+        }
+
+        .login-footer {
+            color: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        .login-footer a {
+            color: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        .login-footer a:hover {
+            color: rgba(0, 0, 0, 0.4) !important;
+        }
+    </style>
+    <script>
+        if (window != top)
+            top.location.replace(location.href);
+    </script>
+</head>
+
+<body style="background:url(${ctxPath}/assets/common/images/bg-01.jpg) no-repeat;height:100%;width:100%;overflow: hidden;background-size:cover;">
+
+<div class="login-wrapper">
+
+    <div class="login-header">
+      
+    </div>
+
+    <div class=" login-body">
+        <div class="layui-card">
+            <div class="layui-card-header">
+                <i class="layui-icon layui-icon-engine"></i>&nbsp;&nbsp;教师注册
+            </div>
+            <form id="userForm" class="layui-card-body layui-form layui-form-pane" action="${ctxPath}/teacherRegister" method="post">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">工号<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="username" type="text" placeholder="工号"  lay-verify="required" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">姓名<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="name" type="text" placeholder="姓名"  lay-verify="required" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">电话<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="phone" type="text" placeholder="电话" lay-verify="required" class="layui-input">
+                    </div>
+                </div>
+      
+               
+                <div class="layui-form-item">
+                    <label class="layui-form-label">邮箱<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="email" type="text" placeholder="邮箱" lay-verify="required" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="password" type="password" placeholder="密码" lay-verify="required|psw" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 30%">重复密码<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input style="width: 90%" name="rePassword" type="password" placeholder="重复密码" lay-verify="required|repsw" class="layui-input">
+                    </div>
+                </div>
+                
+                <!--<div class="layui-form-item">-->
+                <!--<label class="layui-form-label"><i class="layui-icon layui-icon-vercode"></i></label>-->
+                <!--<div class="layui-input-block">-->
+                <!--<div class="layui-row inline-block">-->
+                <!--<div class="layui-col-xs7">-->
+                <!--<input name="code" type="text" lay-verify="required" placeholder="验证码"-->
+                <!--class="layui-input">-->
+                <!--</div>-->
+                <!--<div class="layui-col-xs5" style="padding-left: 10px;">-->
+                <!--<img class="login-captcha" src="https://www.oschina.net/action/user/captcha">-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                  <div class="layui-form-item">
+                
+                  <div class="layui-form-item">
+                   <a href="/login" class="layui-link">
+                   返回登录</a> 
+                </div>
+                   
+                </div>
+                <div class="layui-form-item">
+                    <button lay-filter="login-submit" class="layui-btn layui-btn-fluid" lay-submit>注册</button>
+                </div>
+                <div class="layui-form-item login-other">
+                   <!--   <label>第三方登录</label>
+                   <a href="javascript:;"><i class="layui-icon layui-icon-login-qq"></i></a>
+                    <a href="javascript:;"><i class="layui-icon layui-icon-login-wechat"></i></a>
+                    <a href="javascript:;"><i class="layui-icon layui-icon-login-weibo"></i></a> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="login-footer">
+    
+    </div>
+</div>
+
+@/* 加入contextPath属性和session超时的配置 */
+<script type="text/javascript">
+    var Feng = {
+        ctxPath: "",
+        addCtx: function (ctx) {
+            if (this.ctxPath === "") {
+                this.ctxPath = ctx;
+            }
+        }
+    };
+    Feng.addCtx("${ctxPath}");
+</script>
+<script type="text/javascript" src="${ctxPath}/assets/common/layui/layui.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/common.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+<script id="dataList3" type="text/x-jsrender">
+<option value="">请选择学院</option>
+{{for data}}
+   <option value="{{:collegeId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script id="dataList" type="text/x-jsrender">
+<option value="">请选择专业</option>
+{{for data}}
+   <option value="{{:majorId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/javascript">
+$(function(){
+  
+	  layui.use(['form'], function() {
+		    form=layui.form;
+			form.on('select(goodsTypes)', function(data){   
+			var val=data.value;		
+			getCity1(val);
+		    form.render("select");
+			console.info(val);
+			
+		   });
+		
+			form.on('select(goodsTypes1)', function(data){   
+				var val=data.value;		
+				getList2(val);
+			    form.render("select");
+				console.info(val);
+				
+			   });
+		   });
+
+});
+function getList(){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/college/getList", function (data) {
+		 $("#college").html("");							
+			var html = $("#dataList3").render(data);						
+			$("#college").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+function getCity1(v){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/major/getList?collegeId="+v, function (data) {
+		 $("#majorId").html("");							
+			var html = $("#dataList").render(data);						
+			$("#majorId").html(html);	
+			 var form = layui.form;
+			 form.render();
+}, function (data) {
+   Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+</script>
+
+
+
+
+
+<script id="dataList4" type="text/x-jsrender">
+<option value="">请选择班级</option>
+{{for data}}
+   <option value="{{:deptId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/javascript">
+
+function getList2(v){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/dept/getList?majorId="+v, function (data) {
+		 $("#collegeId").html("");							
+			var html = $("#dataList4").render(data);						
+			$("#collegeId").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+
+
+</script>
+<script>
+    layui.use(['layer', 'form', 'ax'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var form = layui.form;
+        var $ax = layui.ax;
+        getList();
+        // 表单提交
+        form.on('submit(login-submit)', function (obj) {
+            return true;
+        });
+        form.verify({
+            psw: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
+            repsw: function (value) {
+                if (value !== $('#userForm input[name=password]').val()) {
+                    return '两次密码输入不一致';
+                }
+            }
+        });
+
+        // 图形验证码
+        // $('.login-captcha').click(function () {
+        //     this.src = this.src + '?t=' + (new Date).getTime();
+        // });
+
+        var errorMsg = "${tips!}";
+        if (errorMsg) {
+            layer.msg(errorMsg, {icon: 5, anim: 6});
+        }
+
+    });
+</script>
+
+
+</body>
+</html>

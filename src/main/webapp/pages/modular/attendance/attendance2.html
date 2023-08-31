@@ -1,0 +1,92 @@
+@layout("/common/_container.html",{js:["/assets/modular/attendance/attendance2.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">学生考勤管理</span>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                           
+                             @if(shiro.hasPermission("/LEAVE_DELETE")){
+                            <div class="layui-inline">
+                                 <select id="userId" name="userId"  lay-search="">
+        
+         
+        					   </select>
+                            </div>
+                           
+                             @}
+                            <div class="layui-inline">
+                             @if(shiro.hasPermission("/LEAVE_DELETE")){
+                                <button id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</button>
+     @}
+                                <button id="btnExp" class="layui-btn icon-btn"><i class="layui-icon">&#xe67d;</i>导出</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="attendanceTable" lay-filter="attendanceTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="${ctxPath}/assets/ueditor\third-party\jquery-1.10.2.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+<script id="dataList" type="text/x-jsrender">
+<option value="">请选择班级</option>
+{{for data}}
+   <option value="{{:deptId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script id="dataList3" type="text/x-jsrender">
+<option value="">请选择考勤学生</option>
+{{for data}}
+   <option value="{{:studentId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/html" id="tableBar">
+     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delete1">查看位置</a>
+     @if(shiro.hasPermission("/mgr/edit")){
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delete">删除</a>
+    @}
+</script>
+<script type="text/javascript">
+
+function getList(){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/student/getList", function (data) {
+		 $("#userId").html("");							
+			var html = $("#dataList3").render(data);						
+			$("#userId").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+
+function getList1(){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/dept/getList", function (data) {
+		 $("#classesId").html("");							
+			var html = $("#dataList").render(data);						
+			$("#classesId").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+</script>
+@}

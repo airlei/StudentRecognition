@@ -1,0 +1,108 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/dept/dept_edit.js"]}){
+<form id="deptForm" lay-filter="deptForm" class="layui-form model-form">
+    <input name="deptId" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">班级名称<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="name" name="name" placeholder="请输入班级名称" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    
+       <div class="layui-form-item">
+        <label class="layui-form-label">学院<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+          
+        
+        	 <select id="college" name="college" lay-filter="goodsTypes" lay-verify="required" required lay-search="">
+        
+         
+        	</select>
+        
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">专业<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+          
+        
+        	 <select id="majorId" name="majorId"  lay-verify="required" required lay-search="">
+        
+         
+        	</select>
+        
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">班级备注<span style="color: red;"></span></label>
+        <div class="layui-input-block">
+            <input id="mark" name="mark" placeholder="请输入班级备注" type="text" class="layui-input" />
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+<script id="dataList3" type="text/x-jsrender">
+<option value="">请选择学院</option>
+{{for data}}
+   <option value="{{:collegeId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script id="dataList" type="text/x-jsrender">
+<option value="">请选择专业</option>
+{{for data}}
+   <option value="{{:majorId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/javascript">
+$(function(){
+  
+	  layui.use(['form'], function() {
+		    form=layui.form;
+			form.on('select(goodsTypes)', function(data){   
+			var val=data.value;		
+			getCity1(val);
+		    form.render("select");
+			console.info(val);
+			
+		   });
+		
+			
+		   });
+
+});
+function getList(){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/college/getList", function (data) {
+		 $("#college").html("");							
+			var html = $("#dataList3").render(data);						
+			$("#college").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+function getCity1(v){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/major/getList?collegeId="+v, function (data) {
+		 $("#majorId").html("");							
+			var html = $("#dataList").render(data);						
+			$("#majorId").html(html);	
+			 var form = layui.form;
+			 form.render();
+}, function (data) {
+   Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+</script>
+@}

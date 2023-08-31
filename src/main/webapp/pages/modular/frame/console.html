@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>${systemName}</title>
+    <link rel="stylesheet" href="${ctxPath}/assets/common/layui/css/layui.css"/>
+    <link rel="stylesheet" href="${ctxPath}/assets/common/module/admin.css?v=311"/>
+    <link rel="stylesheet" href="${ctxPath}/assets/expand/css/style.css" media="all"/>
+
+    <style>
+        /** 卡片轮播图样式 */
+        .admin-carousel .layui-carousel-ind {
+            position: absolute;
+            top: -41px;
+            text-align: right;
+        }
+
+        .admin-carousel .layui-carousel-ind ul {
+            background: 0 0;
+        }
+
+        .admin-carousel .layui-carousel-ind li {
+            background-color: #e2e2e2;
+        }
+
+        .admin-carousel .layui-carousel-ind li.layui-this {
+            background-color: #999;
+        }
+
+        /** 广告位轮播图 */
+        .admin-news .layui-carousel-ind {
+            height: 45px;
+        }
+
+        .admin-news a {
+            display: block;
+            line-height: 60px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- 加载动画，移除位置在common.js中 -->
+<div class="page-loading">
+    <div class="ball-loader">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+
+<!-- 正文开始 -->
+<div class="layui-fluid" style="background: #ffffff">
+    
+
+ <fieldset class="layui-elem-field layui-field-title" >
+  <legend>新闻动态</legend>
+</fieldset>
+<div class="layui-collapse" lay-accordion="">
+   @for(notice in list) {
+  <div class="layui-colla-item">
+    <h2 class="layui-colla-title">${notice.title}</h2>
+ 
+      @if(noticeLP.index==1){
+    <div class="layui-colla-content layui-show">
+      @}
+      
+      @if(noticeLP.index!=1){
+    <div class="layui-colla-content">
+      @}
+      <p>${notice.content}</p>
+      <br/>
+       <p>${notice.createTime,dateFormat="yyyy-MM-dd HH:mm:ss"}</p>
+    </div>
+  </div>
+  @}
+ 
+  
+</div>
+</div>
+
+<!-- js部分 -->
+@/* 加入contextPath属性和session超时的配置 */
+<script type="text/javascript">
+    var Feng = {
+        ctxPath: "",
+        addCtx: function (ctx) {
+            if (this.ctxPath === "") {
+                this.ctxPath = ctx;
+            }
+        }
+    };
+    Feng.addCtx("${ctxPath}");
+</script>
+
+<script type="text/javascript" src="${ctxPath}/assets/common/layui/layui.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/common.js?v=311"></script>
+
+<!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+<script>
+
+</script>
+<script>
+    layui.use(['layer', 'carousel','dropdown', 'util','element'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var carousel = layui.carousel;
+        var device = layui.device;
+        var element = layui.element;
+     
+        
+        //监听折叠
+        element.on('collapse(test)', function(data){
+          layer.msg('展开状态：'+ data.show);
+        });
+        // 渲染轮播
+        carousel.render({
+            elem: '.layui-carousel',
+            width: '100%',
+            height: '60px',
+            arrow: 'none',
+            autoplay: true,
+            trigger: device.ios || device.android ? 'click' : 'hover',
+            anim: 'fade'
+        });
+    });
+</script>
+</body>
+
+</html>

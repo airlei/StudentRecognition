@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.projects.modular.attendance.mapper.TeacherClassMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.projects.modular.attendance.entity.TeacherClass">
+        <id column="teacher_class_id" property="teacherClassId" />
+        <result column="teacher_id" property="teacherId" />
+        <result column="class_id" property="classId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        teacher_class_id AS "teacherClassId", teacher_id AS "teacherId", class_id AS "classId"
+    </sql>
+
+</mapper>

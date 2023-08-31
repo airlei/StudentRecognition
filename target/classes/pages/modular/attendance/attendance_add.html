@@ -1,0 +1,213 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/attendance/attendance_add.js"]}){
+<form id="attendanceForm" lay-filter="attendanceForm" class="layui-form model-form">
+    <input name="attendId" type="hidden"/>
+    <input name="roomId"     value="${roomId}"        type="hidden"/>
+      <input id="lat"   type="hidden"/>
+        <input id="lng"     type="hidden"/>
+    <div style="margin-left: 20px" class="layui-form-item text-left">
+        <button id="open" class="layui-btn layui-btn-primary" type="button" >打开摄像头</button>
+        <button id="close"  class="layui-btn layui-btn-primary" type="button" >关闭摄像头</button>
+     
+    </div>
+    
+    	<video  style="margin-left: 20px"  id="video" width="600px" height="450px" autoplay></video>
+		<canvas style="margin-left: 20px" hidden="hidden" id="canvas" width="600px" height="350px"></canvas>
+         <div class="layui-form-item">
+          <label class="layui-form-label">地图定位<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+           <!--  <input id="address" name="address" placeholder="请输入地址" type="text" class="layui-input" lay-verify="required" required/> -->
+          <div id="allmap" style="width: 100%;height: 300px"></div>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" id="CatchCode"  type="button">拍照确认</button>
+    </div>
+</form>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EA50f966a0f1763c87d0b4100e9f03bb"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script type="text/javascript">
+
+var video;//视频流对象
+var context;//绘制对象
+var canvas;//画布对象
+var flag = false;
+var admin ;
+$(function() {
+	layui.use(['form', 'admin', 'ax'], function () {
+	    var $ = layui.jquery;
+	    var $ax = layui.ax;
+	    var form = layui.form;
+	    admin = layui.admin;
+	    
+	    
+	});
+	//开启摄像头
+	$("#open").click(function() {
+		//判断摄像头是否打开
+		if (!flag) {
+			//调用摄像头初始化
+			open();
+			flag = true;
+		}
+	});
+	//关闭摄像头
+	$("#close").click(function() {
+		//判断摄像头是否打开
+		if (flag) {
+			video.srcObject.getTracks()[0].stop();
+			flag = false;
+		}
+	});
+	//拍照
+	$("#CatchCode").click(function() {
+		if (flag) {
+			context.drawImage(video, 0, 0, 330, 250);
+			CatchCode();
+		} else
+			alert("请先开启摄像头!");
+	});
+});
+//将当前图像传输到后台
+function CatchCode() {
+	//获取图像
+	var img = getBase64();
+	//Ajax将Base64字符串传输到后台处理
+	$.ajax({
+		type : "POST",
+		url : "/attendance/searchFace",
+		data : {
+			img : img,
+			lat:$("#lat").val(),
+			lng:$("#lng").val(),
+			roomId : "${roomId}" ,
+			
+	
+		},
+		dataType : "JSON",
+		success : function(data) {
+			//返回的结果
+			//取出对比结果的返回分数，如果分数90以上就判断识别成功了
+			if(data.code == 200 ){
+
+					//关闭摄像头
+					video.srcObject.getTracks()[0].stop();
+					//提醒用户识别成功
+				if (flag) {
+				video.srcObject.getTracks()[0].stop();
+				flag = false;
+					}
+				  Feng.success("考勤成功");
+
+		            //传给上个页面，刷新table用
+		       admin.putTempData('formOk', true);
+
+		            //关掉对话框
+		       admin.closeThisDialog();
+					
+				
+
+
+			}else{
+				alert(data.message);
+				}
+			
+		
+		},
+		error : function(q, w, e) {
+			alert(q + w + e);
+		}
+	});
+};
+//开启摄像头
+function open() {
+	//获取摄像头对象
+	canvas = document.getElementById("canvas");
+	context = canvas.getContext("2d");
+	//获取视频流
+	video = document.getElementById("video");
+	var videoObj = {
+		"video" : true
+	}, errBack = function(error) {
+		console.log("Video capture error: ", error.code);
+	};
+	context.drawImage(video, 0, 0, 330, 250);
+	//初始化摄像头参数
+	if (navigator.getUserMedia || navigator.webkitGetUserMedia
+			|| navigator.mozGetUserMedia) {
+		navigator.getUserMedia = navigator.getUserMedia
+				|| navigator.webkitGetUserMedia
+				|| navigator.mozGetUserMedia;
+		navigator.getUserMedia(videoObj, function(stream) {
+			video.srcObject = stream;
+			video.play();
+		}, errBack);
+	}
+}
+//将摄像头拍取的图片转换为Base64格式字符串
+function getBase64() {
+	//获取当前图像并转换为Base64的字符串
+	var imgSrc = canvas.toDataURL("image/png");
+	//截取字符串
+	return imgSrc.substring(22);
+};
+
+
+
+//清除覆盖物
+function remove_overlay(){
+	map.clearOverlays();         
+}
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,16);
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+		
+			$("#lat").val(r.point.lat);
+			$("#lng").val(r.point.lng);
+			console.log(r.address);//地址信息
+			var addComp = r.address;
+		　var result = addComp.province + addComp.city ;
+			
+			$("#address").val(result);
+		}
+		else {
+			alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
+	
+	
+	
+	function showInfo(e){
+		remove_overlay();
+		var mk = new BMap.Marker(e.point);
+		map.addOverlay(mk);
+		$("#lat").val(e.point.lat);
+		$("#lng").val(e.point.lng);
+		var geoc = new BMap.Geocoder();
+		geoc.getLocation(e.point, function(rs){
+		　　　　var addComp = rs.addressComponents;
+		　　　　var result = addComp.province + addComp.city + addComp.district + addComp.street + addComp.streetNumber;
+		　　　$("#address").val(result);
+		  $("[name='lnglat']").val(e.point.lat+","+e.point.lng);
+		　　　　//$("#start_location").val(result);
+		　　　　　
+		　　　　});
+		
+		
+	
+		
+	}
+	map.addEventListener("click", showInfo);
+	
+</script>
+
+@}

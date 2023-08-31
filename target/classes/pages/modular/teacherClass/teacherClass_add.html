@@ -1,0 +1,148 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/teacherClass/teacherClass_add.js"]}){
+<form id="teacherClassForm" lay-filter="teacherClassForm" class="layui-form model-form">
+    <input name="teacherClassId" type="hidden"/>
+     <input name="teacherId" value="${teacherId}" type="hidden"/>
+    
+  
+  
+                    <div class="layui-form-item">
+        <label class="layui-form-label">学院<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+          
+        
+        	 <select id="college" name="college" lay-filter="goodsTypes" lay-verify="required" required lay-search="">
+        
+         
+        	</select>
+        
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">专业<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+          
+        
+        	 <select id="majorId" name="majorId" lay-filter="goodsTypes1" lay-verify="required" required lay-search="">
+        
+         
+        	</select>
+        
+        </div>
+    </div>
+                 <div class="layui-form-item">
+                    <label class="layui-form-label">班级</label>
+                    <div class="layui-input-block">
+                         <select id="collegeId" name="classId" lay-verify="required" lay-search="">
+                    </select>
+                    </div>
+                </div>
+  
+  
+   
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+<script type="text/javascript" src="${ctxPath}/assets/common/layui/layui.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/common.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+<script id="dataList3" type="text/x-jsrender">
+<option value="">请选择学院</option>
+{{for data}}
+   <option value="{{:collegeId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script id="dataList" type="text/x-jsrender">
+<option value="">请选择专业</option>
+{{for data}}
+   <option value="{{:majorId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/javascript">
+$(function(){
+  
+	  layui.use(['form'], function() {
+		    form=layui.form;
+			form.on('select(goodsTypes)', function(data){   
+			var val=data.value;		
+			getCity1(val);
+		    form.render("select");
+			console.info(val);
+			
+		   });
+		
+			form.on('select(goodsTypes1)', function(data){   
+				var val=data.value;		
+				getList2(val);
+			    form.render("select");
+				console.info(val);
+				
+			   });
+		   });
+
+});
+function getList(){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/college/getList", function (data) {
+		 $("#college").html("");							
+			var html = $("#dataList3").render(data);						
+			$("#college").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+function getCity1(v){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/major/getList?collegeId="+v, function (data) {
+		 $("#majorId").html("");							
+			var html = $("#dataList").render(data);						
+			$("#majorId").html(html);	
+			 var form = layui.form;
+			 form.render();
+}, function (data) {
+   Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+</script>
+
+
+
+
+
+<script id="dataList4" type="text/x-jsrender">
+<option value="">请选择班级</option>
+{{for data}}
+   <option value="{{:deptId}}">{{:name}}</option>    
+{{/for}} 
+</script>
+<script type="text/javascript">
+
+function getList2(v){
+	 var $ax = layui.ax;	
+	 var ajax = new $ax(Feng.ctxPath + "/dept/getList?majorId="+v, function (data) {
+		 $("#collegeId").html("");							
+			var html = $("#dataList4").render(data);						
+			$("#collegeId").html(html);	
+			 var form = layui.form;
+			    form.render();
+}, function (data) {
+    Feng.error("" + data.responseJSON.message)
+});
+
+ajax.start();
+}
+
+
+
+</script>
+@}

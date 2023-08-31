@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.projects.modular.attendance.mapper.ClassesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.projects.modular.attendance.entity.Classes">
+        <id column="dept_id" property="deptId" />
+        <result column="name" property="name" />
+        <result column="mark" property="mark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        class_id AS "deptId", name AS "name", mark AS "mark",major_id AS "majorId"
+    </sql>
+    <select id="getClassesByNm" resultType="com.projects.modular.attendance.entity.Classes">
+        select
+        <include refid="Base_Column_List"/>
+        from t_classes
+        where 1=1
+        <if test="name != null and name != ''">
+            and name = #{name}
+        </if>
+    </select>
+</mapper>

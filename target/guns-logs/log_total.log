@@ -1,0 +1,321 @@
+2023-03-28 11:59:30.483  INFO 5784 --- [main] com.projects.StartApplication            : Starting StartApplication v1.0.0 on DESKTOP-BGCI9BD with PID 5784 (D:\projects\target\projects.jar started by 17896 in D:\projects\target)
+2023-03-28 11:59:30.485  INFO 5784 --- [main] com.projects.StartApplication            : The following profiles are active: dev
+2023-03-28 11:59:31.606  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$288f5dec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:31.662  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.106  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.111  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$c1711d74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.116  INFO 5784 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2023-03-28 11:59:32.291  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.294  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.314  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.320  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.324  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.426  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.427  INFO 5784 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2023-03-28 11:59:32.437  INFO 5784 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2023-03-28 11:59:32.439  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.442  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.456  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$50462eaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.499  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.504  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.513  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.514  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:32.741  INFO 5784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$97aa6e53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 11:59:33.171  INFO 5784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-03-28 11:59:33.195  INFO 5784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28 11:59:33.196  INFO 5784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2023-03-28 11:59:33.206  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2023-03-28 11:59:33.207  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-03-28 11:59:33.207  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-28 11:59:33.210  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2023-03-28 11:59:33.292  INFO 5784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28 11:59:33.292  INFO 5784 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2764 ms
+2023-03-28 11:59:33.769  INFO 5784 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-28 11:59:35.426  INFO 5784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-28 11:59:35.765  WARN 5784 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-03-28 11:59:35.951  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/projects/target/projects.jar!/BOOT-INF/lib/transactions-4.0.6.jar!/transactions-defaults.properties
+2023-03-28 11:59:35.954  WARN 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2023-03-28 11:59:35.962  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2023-03-28 11:59:35.962  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2023-03-28 11:59:35.962  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2023-03-28 11:59:35.962  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2023-03-28 11:59:35.962  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2023-03-28 11:59:35.963  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2023-03-28 11:59:35.963  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2023-03-28 11:59:35.964  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2023-03-28 11:59:35.964  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\projects\target\transaction-logs
+2023-03-28 11:59:35.965  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2023-03-28 11:59:35.965  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2023-03-28 11:59:35.966  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2023-03-28 11:59:35.966  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2023-03-28 11:59:35.967  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2023-03-28 11:59:35.967  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2023-03-28 11:59:35.967  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2023-03-28 11:59:35.968  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2023-03-28 11:59:35.968  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 172.28.129.110.tm
+2023-03-28 11:59:35.969  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2023-03-28 11:59:35.969  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2023-03-28 11:59:35.970  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2023-03-28 11:59:35.970  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2023-03-28 11:59:35.971  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2023-03-28 11:59:35.972  INFO 5784 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2023-03-28 11:59:36.522  INFO 5784 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-03-28 11:59:36.542  INFO 5784 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-03-28 11:59:36.542  INFO 5784 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2023-03-28 11:59:36.543  INFO 5784 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-03-28 11:59:36.545  INFO 5784 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-03-28 11:59:36.545  INFO 5784 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-03-28 11:59:36.546  INFO 5784 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2023-03-28 11:59:36.546  INFO 5784 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@13c3c1e1
+2023-03-28 11:59:36.565  INFO 5784 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-03-28 11:59:36.620  INFO 5784 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-03-28 11:59:36.620  INFO 5784 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-03-28 11:59:36.660  INFO 5784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-28 11:59:36.663  INFO 5784 --- [main] com.projects.StartApplication            : Started StartApplication in 6.75 seconds (JVM running for 7.25)
+2023-03-28 11:59:36.666  INFO 5784 --- [main] com.projects.StartApplication            : StartApplication is success!
+2023-03-28 16:20:22.185  INFO 16268 --- [main] com.projects.StartApplication            : Starting StartApplication v1.0.0 on DESKTOP-BGCI9BD with PID 16268 (D:\projects\target\projects.jar started by 17896 in D:\projects\target)
+2023-03-28 16:20:22.188  INFO 16268 --- [main] com.projects.StartApplication            : The following profiles are active: dev
+2023-03-28 16:20:23.324  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$7d1e0d3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:23.386  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:23.800  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:23.804  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$15ffccc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:23.808  INFO 16268 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2023-03-28 16:20:23.947  WARN 16268 --- [main] net.sf.ehcache.DiskStorePathManager      : diskStorePath 'C:\Users\17896\AppData\Local\Temp\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\17896\AppData\Local\Temp\ehcache\ehcache_auto_created7317545273661302858diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2023-03-28 16:20:24.003  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.006  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.029  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.034  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.036  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.134  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.135  INFO 16268 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2023-03-28 16:20:24.142  INFO 16268 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2023-03-28 16:20:24.144  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.174  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.187  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$a4d4de02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.225  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.229  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.238  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.239  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.482  INFO 16268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec391da6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:24.879  INFO 16268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-03-28 16:20:24.907  INFO 16268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28 16:20:24.907  INFO 16268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2023-03-28 16:20:24.920  INFO 16268 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2023-03-28 16:20:24.920  INFO 16268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-03-28 16:20:24.920  INFO 16268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-28 16:20:24.925  INFO 16268 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2023-03-28 16:20:25.009  INFO 16268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28 16:20:25.009  INFO 16268 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2781 ms
+2023-03-28 16:20:25.452  INFO 16268 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-28 16:20:27.271  INFO 16268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-28 16:20:27.574  WARN 16268 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-03-28 16:20:27.791  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/projects/target/projects.jar!/BOOT-INF/lib/transactions-4.0.6.jar!/transactions-defaults.properties
+2023-03-28 16:20:27.795  WARN 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2023-03-28 16:20:27.809  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2023-03-28 16:20:27.809  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2023-03-28 16:20:27.810  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2023-03-28 16:20:27.816  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2023-03-28 16:20:27.817  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2023-03-28 16:20:27.817  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2023-03-28 16:20:27.817  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2023-03-28 16:20:27.818  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2023-03-28 16:20:27.818  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\projects\target\transaction-logs
+2023-03-28 16:20:27.818  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2023-03-28 16:20:27.819  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2023-03-28 16:20:27.819  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2023-03-28 16:20:27.819  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2023-03-28 16:20:27.820  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2023-03-28 16:20:27.820  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2023-03-28 16:20:27.821  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2023-03-28 16:20:27.821  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2023-03-28 16:20:27.822  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 172.28.129.110.tm
+2023-03-28 16:20:27.829  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2023-03-28 16:20:27.829  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2023-03-28 16:20:27.831  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2023-03-28 16:20:27.831  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2023-03-28 16:20:27.832  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2023-03-28 16:20:27.833  INFO 16268 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2023-03-28 16:20:28.394  INFO 16268 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-03-28 16:20:28.414  INFO 16268 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-03-28 16:20:28.414  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2023-03-28 16:20:28.415  INFO 16268 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-03-28 16:20:28.416  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-03-28 16:20:28.416  INFO 16268 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-03-28 16:20:28.416  INFO 16268 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2023-03-28 16:20:28.416  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b11a194
+2023-03-28 16:20:28.434  INFO 16268 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-03-28 16:20:28.490  INFO 16268 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-03-28 16:20:28.490  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-03-28 16:20:28.517 ERROR 16268 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-9090]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.projects.StartApplication.main(StartApplication.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1067)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1149)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:561)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:998)
+	... 22 common frames omitted
+
+2023-03-28 16:20:28.525  INFO 16268 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-28 16:20:28.536  INFO 16268 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-28 16:20:28.538 ERROR 16268 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9090, or configure this application to listen on another port.
+
+2023-03-28 16:20:28.542  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-03-28 16:20:28.545  INFO 16268 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-03-28 16:20:28.546  INFO 16268 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-03-28 16:20:28.546  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-03-28 16:20:28.547  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-03-28 16:20:28.547  INFO 16268 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-03-28 16:20:28.548  INFO 16268 --- [main] c.a.icatch.imp.TransactionServiceImp     : Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2023-03-28 16:20:28.552  INFO 16268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-28 16:20:28.561  INFO 16268 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-03-28 16:20:28.563  INFO 16268 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2023-03-28 16:20:44.750  INFO 13368 --- [main] com.projects.StartApplication            : Starting StartApplication v1.0.0 on DESKTOP-BGCI9BD with PID 13368 (D:\projects\target\projects.jar started by 17896 in D:\projects\target)
+2023-03-28 16:20:44.753  INFO 13368 --- [main] com.projects.StartApplication            : The following profiles are active: dev
+2023-03-28 16:20:45.921  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$cc99fed3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:45.985  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.433  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.439  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$657bbe5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.454  INFO 13368 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2023-03-28 16:20:46.645  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.648  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.673  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.681  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.686  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.841  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.842  INFO 13368 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2023-03-28 16:20:46.854  INFO 13368 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2023-03-28 16:20:46.856  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.861  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.880  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$f450cf96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.940  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.948  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.960  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:46.962  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:47.294  INFO 13368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3bb50f3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-28 16:20:47.845  INFO 13368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-03-28 16:20:47.895  INFO 13368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28 16:20:47.896  INFO 13368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2023-03-28 16:20:47.917  INFO 13368 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2023-03-28 16:20:47.920  INFO 13368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-03-28 16:20:47.927  INFO 13368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-03-28 16:20:47.932  INFO 13368 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2023-03-28 16:20:48.108  INFO 13368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28 16:20:48.108  INFO 13368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3307 ms
+2023-03-28 16:20:48.804  INFO 13368 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-28 16:20:51.087  INFO 13368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-28 16:20:51.496  WARN 13368 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-03-28 16:20:51.727  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/projects/target/projects.jar!/BOOT-INF/lib/transactions-4.0.6.jar!/transactions-defaults.properties
+2023-03-28 16:20:51.732  WARN 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2023-03-28 16:20:51.740  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2023-03-28 16:20:51.741  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2023-03-28 16:20:51.741  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2023-03-28 16:20:51.741  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2023-03-28 16:20:51.742  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2023-03-28 16:20:51.742  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2023-03-28 16:20:51.743  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2023-03-28 16:20:51.743  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2023-03-28 16:20:51.744  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\projects\target\transaction-logs
+2023-03-28 16:20:51.744  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2023-03-28 16:20:51.745  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2023-03-28 16:20:51.745  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2023-03-28 16:20:51.746  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2023-03-28 16:20:51.746  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2023-03-28 16:20:51.747  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2023-03-28 16:20:51.747  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2023-03-28 16:20:51.748  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2023-03-28 16:20:51.748  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 172.28.129.110.tm
+2023-03-28 16:20:51.749  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2023-03-28 16:20:51.749  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2023-03-28 16:20:51.750  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2023-03-28 16:20:51.750  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2023-03-28 16:20:51.751  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2023-03-28 16:20:51.760  INFO 13368 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2023-03-28 16:20:52.406  INFO 13368 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-03-28 16:20:52.426  INFO 13368 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-03-28 16:20:52.426  INFO 13368 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2023-03-28 16:20:52.428  INFO 13368 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-03-28 16:20:52.431  INFO 13368 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-03-28 16:20:52.432  INFO 13368 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-03-28 16:20:52.436  INFO 13368 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2023-03-28 16:20:52.437  INFO 13368 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@636e8cc
+2023-03-28 16:20:52.456  INFO 13368 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-03-28 16:20:52.525  INFO 13368 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-03-28 16:20:52.526  INFO 13368 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-03-28 16:20:52.604  INFO 13368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-28 16:20:52.608  INFO 13368 --- [main] com.projects.StartApplication            : Started StartApplication in 8.396 seconds (JVM running for 8.882)
+2023-03-28 16:20:52.612  INFO 13368 --- [main] com.projects.StartApplication            : StartApplication is success!
+2023-03-28 16:21:03.111  INFO 13368 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 16:21:03.112  INFO 13368 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-28 16:21:03.128  INFO 13368 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2023-03-28 16:21:03.145  INFO 13368 --- [http-nio-9090-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...

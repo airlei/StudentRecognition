@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>${systemName}</title>
+    <link rel="stylesheet" href="${ctxPath}/assets/common/layui/css/layui.css"/>
+    <link rel="stylesheet" href="${ctxPath}/assets/common/module/admin.css?v=311"/>
+
+    <style>
+        .numberInfoSubTitle {
+            color: rgba(0, 0, 0, .45);
+            font-size: 14px;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: break-all;
+        }
+
+        .numberInfoValue {
+            color: rgba(0, 0, 0, .85);
+            font-size: 24px;
+            margin-top: 10px;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .numberInfoSuffix {
+            color: rgba(0, 0, 0, .65);
+            font-size: 16px;
+            font-style: normal;
+            margin-left: 4px;
+            line-height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 加载动画，移除位置在common.js中 -->
+<div class="page-loading">
+    <div class="ball-loader">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+
+<!-- 正文开始 -->
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+
+        <div class="layui-col-xs12 layui-col-md8">
+            <div class="layui-card" style="">
+                <div class="layui-card-header">实时考勤统计</div>
+                <div class="layui-card-body">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-lg3 text-center">
+                            <div class="numberInfoSubTitle">今日考勤人数</div>
+                            <div class="numberInfoValue">
+                                ${A1}<em class="numberInfoSuffix">个</em>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-lg3 text-center">
+                            <div class="numberInfoSubTitle">今日迟到人数</div>
+                            <div class="numberInfoValue">${A2}<em class="numberInfoSuffix">个</em></div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-lg3 text-center">
+                            <div class="numberInfoSubTitle">正常签到累计</div>
+                            <div class="numberInfoValue">${A3}<em class="numberInfoSuffix">个</em></div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-lg3 text-center">
+                            <div class="numberInfoSubTitle">今日请假人数</div>
+                            <div class="numberInfoValue">
+                                ${A4}<em class="numberInfoSuffix">个</em>
+                            </div>
+                        </div>
+                    </div>
+                   <div style="text-align: center;padding: 30px 0 10px 0;">
+                         <div id="hdqkyc1" style="width: 100%;height: 437px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-col-xs12 layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">一周迟到统计</div>
+                <div class="layui-card-body" style="height: 240px;overflow: hidden;">
+                    <div id="hdqkyc" style="width: 100%;height: 260px;"></div>
+                </div>
+            </div>
+            <div class="layui-card">
+                <div class="layui-card-header">一周请假人数</div>
+                <div class="layui-card-body" style="height: 222px;overflow: hidden;">
+                    <div id="hjxl" style="width: 100%;height: 280px;margin-top: -20px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-col-xs12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-tab layui-tab-brief" lay-filter="tabZZT">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">考勤统计</li>
+                        </ul>
+                        <form id="searchForm"  class="layui-form model-form">
+                        <div class="layui-col-md3">
+                            <label class="layui-form-label">班级</label>
+                            <div class="layui-input-block">
+                                <select  id="deptId" name="deptId" lay-search="">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-col-md3">
+                            <label class="layui-form-label">课程</label>
+                            <div class="layui-input-block">
+                                <select  id="roomId" name="roomId" lay-search="">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="layui-col-md3">
+                            <label class="layui-form-label">日期</label>
+                            <div class="layui-input-block">
+                                <input id="timeLimit" class="layui-input" type="text" placeholder="考勤时间"/>
+                            </div>
+                        </div>
+
+                            <div class="layui-col-md3">
+                                <div class="layui-input-block">
+                                    <input id="btnSearch" type="button " class="layui-btn icon-btn" value ="搜索"></input>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <div class="layui-row layui-col-space30">
+                                    <div class="layui-col-xs16 layui-col-md8">
+                                        <div id="xse" style="height: 300px;width: 100%;margin-top: 20px;"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/layui/layui.js"></script>
+<script src="${ctxPath}/assets/common/libs/echarts/echarts.min.js"></script>
+<script src="${ctxPath}/assets/common/libs/echarts/echartsTheme.js"></script>
+
+
+<!-- js部分 -->
+@/* 加入contextPath属性和session超时的配置 */
+<script type="text/javascript">
+
+    var Feng = {
+        ctxPath: "",
+        addCtx: function (ctx) {
+            if (this.ctxPath === "") {
+                this.ctxPath = ctx;
+            }
+        }
+    };
+    Feng.addCtx("${ctxPath}");
+</script>
+<script type="text/javascript" src="${ctxPath}/assets/common/layui/layui.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/common.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/common/js/jsrender.js"></script>
+
+<script id="dataList1" type="text/x-jsrender">
+<option value="">请选择班级</option>
+{{for data}}
+   <option value="{{:deptId}}">{{:name}}</option>
+{{/for}}
+</script>
+<script id="dataList2" type="text/x-jsrender">
+<option value="">请选择课堂</option>
+{{for data}}
+   <option value="{{:roomId}}">{{:name}}</option>
+{{/for}}
+</script>
+<script>
+
+    $('#btnSearch').click(function () {
+        search();
+    });
+    function search(){
+        var deptId = $("#deptId").val();
+        var roomId = $("#roomId").val();
+        var timeLimit = $("#timeLimit").val();
+        console.log("deptId:"+deptId+" roomId:"+roomId+" timeLimit:"+timeLimit);
+        var $ax = layui.ax;
+        var ajax = new $ax(Feng.ctxPath + "/attendance/statistics1?deptId="+deptId+"&roomId="+roomId+"&timeLimit="+timeLimit, function (data) {
+            console.log("data: "+data);
+            var dataList = data.data;
+            console.log("dataList: "+dataList);
+            var types =[];
+            var counts =[];
+            for(var i=0;i<dataList.length;i++){
+                types[i]=dataList[i].type;
+                counts[i]=dataList[i].count;
+            }
+            myCharts3(types,counts);
+        }, function (data) {
+            layer.msg(data, {icon: 5, anim: 6});
+        });
+        ajax.start();
+    }
+
+    function myCharts3(types,counts){
+        //$("#xse").empty();
+        var myCharts3 = echarts.init(document.getElementById('xse'), myEchartsTheme);
+        var option3 = {
+            title: {
+                text: '考勤统计',
+                textStyle: {
+                    color: '#000',
+                    fontSize: 14
+                }
+            },
+            tooltip: {},
+            grid: {
+                left: '0',
+                right: '0',
+                bottom: '0',
+                containLabel: true
+            },
+            xAxis: {
+                data: types
+            },
+            yAxis: {},
+            series: [{
+                type: 'bar',
+                data: counts,
+                barMaxWidth: 45
+            }]
+        };
+        myCharts3.setOption(option3);
+        myCharts3.resize();
+    }
+
+    $(function() {
+        layui.use(['layer', 'element', 'laydate', 'ax','form'], function () {
+            var $ = layui.jquery;
+            var layer = layui.layer;
+            var $ax = layui.ax;
+            var element = layui.element;
+            var laydate = layui.laydate;
+            //渲染时间选择框
+            laydate.render({
+                elem: '#timeLimit',
+                range: true,
+                trigger: 'click',
+                max: Feng.currentDate()
+            });
+            search();
+            getList1();
+            getList2();
+            // 渲染活动情况预测
+            var myCharts = echarts.init(document.getElementById('hdqkyc'), myEchartsTheme);
+            var myCharts1 = echarts.init(document.getElementById('hdqkyc1'), myEchartsTheme);
+            var mData = ${priceList};
+            var option = {
+                title: {
+                    text: '',
+                    subtext: '',
+                    textStyle: {
+                        color: '#000'
+                    }
+                },
+                tooltip: {
+                    trigger: "axis"
+                },
+                xAxis: [{
+                    type: "category",
+                    boundaryGap: !1,
+                    data: ["${days[0]}", "${days[1]}", "${days[2]}", "${days[3]}", "${days[4]}", "${days[5]}", "${days[6]}"]
+                }],
+                yAxis: [{
+                    type: "value"
+                }],
+                series: [{
+                    name: "数量",
+                    type: "line",
+                    smooth: !0,
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                type: "default"
+                            }
+                        }
+                    },
+                    data: mData
+                }]
+            };
+            myCharts.setOption(option);
+
+
+            var mData3 = ${yearOrderprice};
+            var option3 = {
+                title: {
+                    text: '月迟到趋势图',
+                    subtext: '',
+                    textStyle: {
+                        color: '#000'
+                    }
+                },
+                tooltip: {
+                    trigger: "axis"
+                },
+                xAxis: [{
+                    type: "category",
+                    boundaryGap: !1,
+                    data: ["${moth[0]}", "${moth[1]}", "${moth[2]}", "${moth[3]}", "${moth[4]}", "${moth[5]}", "${moth[6]}", "${moth[7]}", "${moth[8]}", "${moth[9]}", "${moth[10]}", "${moth[11]}"]
+                }],
+                yAxis: [{
+                    type: "value"
+                }],
+                series: [{
+                    name: "数量",
+                    type: "bar",
+                    smooth: !0,
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                type: "default"
+                            }
+                        }
+                    },
+                    data: mData3
+                }]
+            };
+            myCharts1.setOption(option3);
+
+
+            // 渲染券核效率图表
+            var myCharts2 = echarts.init(document.getElementById('hjxl'), myEchartsTheme);
+            var mData1 = ${profitList};
+            var option1 = {
+                title: {
+                    text: '',
+                    subtext: '',
+                    textStyle: {
+                        color: '#000'
+                    }
+                },
+                tooltip: {
+                    trigger: "axis"
+                },
+                xAxis: [{
+                    type: "category",
+                    boundaryGap: !1,
+                    data: ["${days[0]}", "${days[1]}", "${days[2]}", "${days[3]}", "${days[4]}", "${days[5]}", "${days[6]}"]
+                }],
+                yAxis: [{
+                    type: "value"
+                }],
+                series: [{
+                    name: "数量",
+                    type: "line",
+                    smooth: !0,
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                type: "default"
+                            }
+                        }
+                    },
+                    data: mData1
+                }]
+            };
+            myCharts2.setOption(option1);
+
+            // 渲染销售额图表
+            /*var myCharts3 = echarts.init(document.getElementById('xse'), myEchartsTheme);
+            var option3 = {
+                title: {
+                    text: '考勤统计',
+                    textStyle: {
+                        color: '#000',
+                        fontSize: 14
+                    }
+                },
+                tooltip: {},
+                grid: {
+                    left: '0',
+                    right: '0',
+                    bottom: '0',
+                    containLabel: true
+                },
+                xAxis: {
+                    data: ['迟到', '请假', '正常签到']
+                },
+                yAxis: {},
+                series: [{
+                    type: 'bar',
+                    data: ${yearOrderList},
+                    barMaxWidth: 45
+                }]
+            };
+            myCharts3.setOption(option3);
+
+
+            // 切换选项卡重新渲染
+            element.on('tab(tabZZT)', function (data) {
+                if (data.index == 0) {
+                    myCharts3.resize();
+                }
+            });*/
+
+            // 窗口大小改变事件
+            window.onresize = function () {
+                myCharts.resize();
+                myCharts2.resize();
+                //myCharts3.resize();
+
+            };
+
+        });
+    });
+
+    function getList2(){
+        var $ax = layui.ax;
+        var ajax = new $ax(Feng.ctxPath + "/classRoom/getList", function (data) {
+            $("#roomId").html("");
+            var html = $("#dataList2").render(data);
+            $("#roomId").html(html);
+            var form = layui.form;
+            form.render();
+        }, function (data) {
+            Feng.error("" + data.responseJSON.message)
+        });
+
+        ajax.start();
+    }
+
+    function getList1(){
+        var $ax = layui.ax;
+        var ajax = new $ax(Feng.ctxPath + "/dept/getList", function (data) {
+            $("#deptId").html("");
+            var html = $("#dataList1").render(data);
+            $("#deptId").html(html);
+            var form = layui.form;
+            form.render();
+        }, function (data) {
+            Feng.error("" + data.responseJSON.message)
+        });
+
+        ajax.start();
+    }
+
+</script>
+</body>
+
+</html>

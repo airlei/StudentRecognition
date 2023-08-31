@@ -1,0 +1,107 @@
+2022-12-17 19:57:46.008  INFO 23740 --- [restartedMain] com.projects.StartApplication            : Starting StartApplication on zz-jiaoqingxiang with PID 23740 (D:\project\workspace\pw\pw\projects\target\classes started by Administrator in D:\project\workspace\pw\pw\projects)
+2022-12-17 19:57:46.069  INFO 23740 --- [restartedMain] com.projects.StartApplication            : The following profiles are active: dev
+2022-12-17 19:57:46.166  INFO 23740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-17 19:57:46.167  INFO 23740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-17 19:57:48.303  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.projects.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$1c9d714a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:48.385  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.278  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.287  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.projects.config.EhCacheConfig$$EnhancerBySpringCGLIB$$b57f30d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.296  INFO 23740 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2022-12-17 19:57:49.637  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.642  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.678  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.projects.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.685  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.691  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.714  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.projects.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.715  INFO 23740 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.projects.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2022-12-17 19:57:49.731  INFO 23740 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.projects.core.shiro.ShiroDbRealm.authorizationCache]
+2022-12-17 19:57:49.734  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.738  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.758  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.projects.config.web.WebConfig$$EnhancerBySpringCGLIB$$4454420d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.814  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.821  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.836  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.837  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:49.945  INFO 23740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bb881b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 19:57:51.009  INFO 23740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-17 19:57:51.047  INFO 23740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-17 19:57:51.048  INFO 23740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2022-12-17 19:57:51.059  INFO 23740 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\tools\jdk1.8\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\tools\oracle\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\tools\jdk1.8\jdk1.8.0_181\bin;D:\tools\svn\TortoiseSVN\bin;D:\tools\cxf\apache-cxf-3.4.7\bin;D:\tools\ant\apache-ant-1.10.12\bin;D:\tools\nodejs\;D:\tools\git\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+2022-12-17 19:57:51.242  INFO 23740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-17 19:57:51.242  INFO 23740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5075 ms
+2022-12-17 19:57:52.099  INFO 23740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-17 19:57:52.740  INFO 23740 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-12-17 19:57:55.763  WARN 23740 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-12-17 19:57:56.058  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/tools/Repositories/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2022-12-17 19:57:56.063  WARN 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2022-12-17 19:57:56.069  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-12-17 19:57:56.070  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-12-17 19:57:56.071  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2022-12-17 19:57:56.071  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2022-12-17 19:57:56.071  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = D:\project\workspace\pw\pw\projects\transaction-logs
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2022-12-17 19:57:56.072  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2022-12-17 19:57:56.073  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2022-12-17 19:57:56.073  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2022-12-17 19:57:56.074  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2022-12-17 19:57:56.074  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2022-12-17 19:57:56.074  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2022-12-17 19:57:56.074  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 192.168.31.248.tm
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2022-12-17 19:57:56.075  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2022-12-17 19:57:56.077  INFO 23740 --- [restartedMain] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2022-12-17 19:57:56.610  INFO 23740 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-12-17 19:57:56.629  INFO 23740 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-12-17 19:57:56.630  INFO 23740 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2022-12-17 19:57:56.631  INFO 23740 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-12-17 19:57:56.633  INFO 23740 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-12-17 19:57:56.634  INFO 23740 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-12-17 19:57:56.634  INFO 23740 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2022-12-17 19:57:56.634  INFO 23740 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4054171a
+2022-12-17 19:57:56.672  INFO 23740 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-12-17 19:57:57.390  INFO 23740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-17 19:57:57.457  INFO 23740 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-12-17 19:57:57.458  INFO 23740 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-12-17 19:57:57.517  INFO 23740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-12-17 19:57:57.522  INFO 23740 --- [restartedMain] com.projects.StartApplication            : Started StartApplication in 12.897 seconds (JVM running for 15.668)
+2022-12-17 19:57:57.529  INFO 23740 --- [restartedMain] com.projects.StartApplication            : StartApplication is success!
+2022-12-17 19:58:41.775  INFO 23740 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-17 19:58:41.776  INFO 23740 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-17 19:58:41.808  INFO 23740 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2022-12-17 19:58:41.839  INFO 23740 --- [http-nio-9090-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-12-17 20:13:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 20:13:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 20:28:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 20:28:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 20:43:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 20:43:41.894  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  [1] sessions were stopped.
+2022-12-17 20:58:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 20:58:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 21:13:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 21:13:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 21:28:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 21:28:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 21:43:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 21:43:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 21:58:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 21:58:41.841  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 22:13:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 22:13:41.843  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
+2022-12-17 22:28:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Validating all active sessions...
+2022-12-17 22:28:41.842  INFO 23740 --- [SessionValidationThread-1] a.s.s.m.AbstractValidatingSessionManager : Finished session validation.  No sessions were stopped.
